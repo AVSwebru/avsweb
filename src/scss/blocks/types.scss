@@ -1,0 +1,19 @@
+.types__leftside {
+  background: #dbf2ff;
+}
+
+.types__title {
+  color: #343434;
+}
+
+.types__rightside {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.types__list {
+  @include reset-list;
+  li:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

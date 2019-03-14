@@ -1,0 +1,27 @@
+.input-text {
+  width: 360px;
+  height: 40px;
+  padding-left: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid rgba(255,255,255,0.5);
+  @include set-placeholder(#fff, 16px, 400);
+  background-position: 15px 50%;
+  background-repeat: no-repeat;
+  color: #fff;  
+  font-size: 16px;
+  font-weight: 400;
+  &--name {
+    background-image: url('../img/icon-user.svg')
+  }
+  &--tel {
+    background-image: url('../img/icon-tel.svg')
+  }
+  &--email {
+    background-image: url('../img/icon-letter.svg')
+  }
+  &:invalid {
+    box-shadow: none; 
+    border-bottom-color: #ff0f3c;
+  }
+}

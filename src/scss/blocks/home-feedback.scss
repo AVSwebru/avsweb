@@ -1,0 +1,24 @@
+.home-feedback {
+
+}
+
+.home-feedback__leftside {
+  background-color: #fff;
+}
+
+.home-feedback__title {
+  text-align: center;
+  color: #060606;
+}
+
+.home-feedback__rightside {
+  background: url('../img/bg-home-feedback.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.home-feedback__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

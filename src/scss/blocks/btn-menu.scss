@@ -1,0 +1,27 @@
+.btn-menu {
+  width: 105px;
+  height: 55px;
+  background: #1e1e1e;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  &::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 26px;
+    height: 3px;
+    background: #ececec;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    width: 26px;
+    height: 3px;
+    background: #ececec;
+    transform: translateX(-50%);
+
+  }
+}

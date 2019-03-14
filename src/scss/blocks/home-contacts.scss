@@ -1,0 +1,19 @@
+.home-contacts__leftside {
+  background: #dbf3ff;
+}
+
+.home-contacts__title {
+  color: #343434;
+}
+
+.home-contacts__rightside {
+  padding: 140px 75px 165px;
+}
+
+.home-contacts__list {
+  @include reset-list;
+  display: flex;
+  margin: 0 -27px;
+  flex-wrap: wrap;
+
+}

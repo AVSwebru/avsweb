@@ -1,0 +1,19 @@
+.custom-list {
+  @include reset-list;
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 18px;
+    color: #4f4f4f;
+    font-size: 15px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      width: 21px;
+      height: 1px;
+      background-color: #cfcfcf;
+    }
+  }
+}

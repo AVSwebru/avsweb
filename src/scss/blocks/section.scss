@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+}
+
+.section__leftside {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.section__rightside {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.section__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.section__title {
+  color: #fff;
+  font-family: $font-decor;
+  font-size: 90px;
+}

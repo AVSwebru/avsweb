@@ -1,0 +1,56 @@
+@mixin reset-link() {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-btn() {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@mixin link-hover($color) {
+  color: $color;
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin set-placeholder($color: #000, $font-size: 16px, $font-weight: 400) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;  
+  }
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;  
+  }
+  &:-moz-placeholder {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;  
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;  
+  }
+}
+
+@mixin hide-input {
+  position: absolute;
+  appearance: none;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}

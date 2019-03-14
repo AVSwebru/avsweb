@@ -1,0 +1,29 @@
+// 1. Your custom variables and variable overwrites.
+@import "variables";
+
+$global-font-family: $font-base;
+$base-color: #2d2d2d;
+$global-link-color: #b7a8b6;
+$base-link-hover-color: #b7a8b6;
+$base-link-text-decoration: underline;
+$global-medium-gutter: 15px;
+
+$modal-dialog-width: 615px;
+$close-hover-color: #999;
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+
+@mixin hook-form-focus() {
+  border-color: #672aa0;
+}
+
+.uk-thumbnav > * > :focus {
+  outline: #6d2cc1 auto 5px;
+}
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";

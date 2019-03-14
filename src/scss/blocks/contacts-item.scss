@@ -1,0 +1,23 @@
+.contacts-item {
+  width: 230px;
+  margin: 0 27px 50px; 
+}
+
+.contacts-item__title {
+  margin-bottom: 25px;
+  padding: 0 0 25px;
+  border-bottom: 1px solid #0d1216;
+  color: #343434;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.contacts-item__text {
+  color: #4f4f4f;
+}
+
+.contacts-item__link {
+  @include reset-link;
+  color: #4f4f4f;
+}
