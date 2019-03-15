@@ -17,7 +17,7 @@
   background-color: transparent;
 }
 
-@mixin link-hover($color) {
+@mixin link-color($color) {
   color: $color;
   &:hover {
     color: $color;

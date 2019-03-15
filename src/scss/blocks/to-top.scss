@@ -1,0 +1,41 @@
+.to-top {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1000;
+  width: 105px;
+  height: 55px;
+  background-color: #696969;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: translateX(-50%);
+  transition: background-color 0.25s;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  &:hover {
+    background-color: #060606;
+    transition: background-color 0.25s;
+    &::before {
+      
+    }
+  }
+}

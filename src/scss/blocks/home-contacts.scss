@@ -1,4 +1,4 @@
-.home-contacts__leftside {
+.home-contacts__title-wrapper {
   background: #dbf3ff;
 }
 
@@ -7,13 +7,23 @@
 }
 
 .home-contacts__rightside {
-  padding: 140px 75px 165px;
+  
 }
 
 .home-contacts__list {
   @include reset-list;
   display: flex;
+  padding: 140px 75px 165px;
   margin: 0 -27px;
   flex-wrap: wrap;
 
 }
+
+#map {
+  width: 50vmax;
+  height: 45vmax;
+}
+
+// #map * {
+//   overflow:visible;
+// }

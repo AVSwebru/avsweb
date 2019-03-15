@@ -18,25 +18,17 @@
 }
 
 .intro__tel {
-  color: #707070;
+  @include reset-link;
+  margin-right: 35px;
+  @include link-color(#707070);
   font-size: 18px;
 }
 
-// .intro__content {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-// }
-
-.intro__content {
+.intro__title {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 3;
-}
-
-.intro__title {
-  
   width: 1000px;
   background-color: #fff;
   background-image: 
@@ -61,8 +53,15 @@
 }
 
 .intro__slogan {
-  // position: absolute;
-  // bottom: 50px;
-  // right: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
   font-size: 20px;
+}
+
+.intro__rightside-inner {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
 }

@@ -1,10 +1,10 @@
 .main-header {
   position: fixed;
-  z-index: 2;
+  z-index: 1000;
   width: 100%;
 }
 
-.home__btn-menu {
+.main-header__btn-menu {
   @include reset-btn;
   position: absolute;
   top: 0;
