@@ -32,62 +32,38 @@
                   font-size: 80px; fill: #fff;" x="400" y="270">веб-студия</text>
           </svg>
         </a>
-        <button class="main-header__btn-menu btn-menu" type=""></button>
-        <nav class="main-nav">
+        <button class="main-header__btn-menu btn-menu js-menu-toggler" data-uk-toggle="target: .js-menu-main, .js-menu-toggler; cls: active" type="button"></button>
+        <nav class="main-nav js-menu-main">
           <ul class="main-nav__list" data-uk-nav>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
-                О нас
+                <span class="main-nav__link-caption">О нас</span>
               </a>
-              <ul class="uk-nav-sub">
-                <li>
-                  <a class="" href="#">
-                     Блог
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="#">
-                     Некроблог
-                  </a>
-                </li>
-              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link active" href="#">
+                <span class="main-nav__link-caption">Услуги</span>
+              </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
-                Услуги
+                <span class="main-nav__link-caption">Типы сайтов</span>
               </a>
-              <ul class="uk-nav-sub">
-                <li>
-                  <a class="" href="#">
-                    Разработка сайтов «под ключ»
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="#">
-                     Оптимизация и продвижение сайтов
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="#">
-                     Контекстная реклама сайта
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="#">
-                     Поддержка и сопровождение сайта
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="#">
-                     Продвижение в соцсетях
-                  </a>
-                </li>
-                <li>
-                  <a class="" href="#">
-                    Видео
-                  </a>
-                </li>
-              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span class="main-nav__link-caption">Портфолио</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span class="main-nav__link-caption">Клиенты</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <span class="main-nav__link-caption">Контакты</span>
+              </a>
             </li>
           </ul>
         </nav>

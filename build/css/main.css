@@ -10229,7 +10229,8 @@ button {
 .logo {
   position: absolute;
   top: 30px;
-  left: 30px; }
+  left: 30px;
+  z-index: 2; }
 
 .services__title-wrapper {
   background-color: #672aa0; }
@@ -10337,8 +10338,33 @@ button {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 2;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+  transition: background-color 0.25s; }
+  .main-header__btn-menu::before {
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }
+  .main-header__btn-menu::after {
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }
+  .main-header__btn-menu.active {
+    background-color: #353535;
+    transition: background-color 0.25s; }
+    .main-header__btn-menu.active::before {
+      -webkit-transform: translateX(-50%) translateY(4px) rotate(-45deg);
+              transform: translateX(-50%) translateY(4px) rotate(-45deg);
+      transition: -webkit-transform 0.25s;
+      transition: transform 0.25s;
+      transition: transform 0.25s, -webkit-transform 0.25s; }
+    .main-header__btn-menu.active::after {
+      -webkit-transform: translateX(-50%) translateY(-4px) rotate(45deg);
+              transform: translateX(-50%) translateY(-4px) rotate(45deg);
+      transition: -webkit-transform 0.25s;
+      transition: transform 0.25s;
+      transition: transform 0.25s, -webkit-transform 0.25s; }
 
 .btn-menu {
   width: 105px;
@@ -10860,3 +10886,65 @@ button {
 
 .page {
   position: relative; }
+
+.main-nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e; }
+  .main-nav.active {
+    display: flex; }
+
+.main-nav__link {
+  display: inline-block !important;
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700; }
+  .main-nav__link:hover {
+    color: #fff; }
+  .main-nav__link::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: -8px;
+    z-index: 1;
+    width: calc(100% + 16px);
+    height: 9px;
+    background-color: #ea246e;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transform-origin: left;
+            transform-origin: left; }
+  .main-nav__link.active::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+  .main-nav__link:hover::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }
+
+.main-nav__link-caption {
+  position: relative;
+  z-index: 2; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__item {
+  margin-bottom: 30px; }
