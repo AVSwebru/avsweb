@@ -2,14 +2,21 @@
 @import "variables";
 
 $global-font-family: $font-base;
-$base-color: #2d2d2d;
-$global-link-color: #b7a8b6;
-$base-link-hover-color: #b7a8b6;
+$base-color: #4f4f4f;
+$global-link-color: #ea246e;
+$base-link-hover-color: #ea246e;
 $base-link-text-decoration: underline;
 $global-medium-gutter: 15px;
 
 $modal-dialog-width: 615px;
 $close-hover-color: #999;
+
+$global-gutter: 20px;
+$global-small-gutter: 20px;
+$global-large-gutter: 20px;
+$global-medium-gutter: 20px;
+
+$nav-item-padding-vertical: 0;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
@@ -22,7 +29,7 @@ $close-hover-color: #999;
 }
 
 .uk-thumbnav > * > :focus {
-  outline: #6d2cc1 auto 5px;
+  outline: #672aa0 auto 5px;
 }
 
 // 4. Import UIkit.

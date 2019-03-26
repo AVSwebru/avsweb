@@ -1,0 +1,15 @@
+.clients {
+  padding: 0 12%;
+}
+
+.cients__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -30px 170px;
+}
+
+.clients__list-item {
+  margin: 0 30px;
+}

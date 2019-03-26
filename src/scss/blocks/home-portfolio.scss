@@ -9,7 +9,13 @@
 
 .home-portfolio__rightside { 
   position: relative;
-  padding: 160px 65px 0 100px;
+  padding: 80px 20px 60px;
+  @media (min-width: $breakpoint-medium) {
+    padding: 160px 40px 0 40px;
+  }
+  @media (min-width: $breakpoint-xlarge) {
+    padding: 160px 65px 0 100px;
+  }
 }
 
 .home-portfolio__view-all {

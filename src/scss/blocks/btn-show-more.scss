@@ -1,0 +1,20 @@
+.btn-show-more {
+  @include reset-btn;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  color: #1e1e1e;
+  font-size: 15px;
+  &:hover {
+    .btn-show-more__icon {
+      animation: rotating 1s infinite linear;
+    }
+  }
+}
+
+.btn-show-more__icon {
+  width: 21px;
+  height: 21px;
+  margin-left: 11px;
+}

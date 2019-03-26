@@ -6,24 +6,13 @@
   color: #343434;
 }
 
-.home-contacts__rightside {
-  
-}
-
 .home-contacts__list {
   @include reset-list;
   display: flex;
-  padding: 140px 75px 165px;
+  padding: 70px 35px 60px;
   margin: 0 -27px;
   flex-wrap: wrap;
-
+  @media (min-width: $breakpoint-small) {
+    padding: 140px 75px 165px;
+  }
 }
-
-#map {
-  width: 50vmax;
-  height: 45vmax;
-}
-
-// #map * {
-//   overflow:visible;
-// }

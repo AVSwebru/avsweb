@@ -17,13 +17,6 @@
   background-size: cover;
 }
 
-.intro__tel {
-  @include reset-link;
-  margin-right: 35px;
-  @include link-color(#707070);
-  font-size: 18px;
-}
-
 .intro__title {
   position: absolute;
   top: 50%;

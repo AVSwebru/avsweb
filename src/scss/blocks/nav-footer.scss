@@ -1,0 +1,43 @@
+.nav-footer {
+  order: 1;
+  @media (min-width: $breakpoint-small) {
+    grid-row: 1 / 3;
+  }
+  @media (min-width: $breakpoint-medium) {
+    grid-row: auto;
+  }
+  @media (min-width: $breakpoint-xlarge) {
+    order: 2;
+  }
+}
+
+.nav-footer__list {
+  @include reset-list;
+  align-items: baseline;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  @media (min-width: $breakpoint-large) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: $breakpoint-xlarge) {
+    display: flex;
+    margin: 0 -20px;  
+  }
+}
+
+
+.nav-footer__item {
+  @media (min-width: $breakpoint-xlarge) {
+    margin: 0 20px;
+  }
+}
+
+
+.nav-footer__link {
+  @include reset-link;
+  white-space: nowrap;
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: 700;
+}

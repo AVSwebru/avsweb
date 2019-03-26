@@ -1,0 +1,199 @@
+.project__work-link {
+  @include reset-link;
+  display: inline-block;
+  margin-bottom: 45px;
+  color: #672aa0;
+  font-size: 15px;
+  &:hover .project__work-link-icon {
+    fill: #ea246e;
+  }
+}
+
+.project__work-link-icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 3px;
+  fill: #672aa0;
+}
+
+.project__goal {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cfcfcf;
+  }
+}
+
+.project__goal-item {
+  width: 370px;
+  &:not(:last-child) {
+    margin-right: 165px;
+  }
+}
+
+.project__section-title {
+  margin-bottom: 25px;
+  color: #1c1b1b;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.project__section-desc {
+  max-width: 370px;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.project__intro {
+  margin-bottom: 90px;
+}
+
+.project__intro-wrapper {
+  display: flex;
+  padding: 120px 12%;
+  margin-bottom: 95px;
+}
+
+.project__intro-1 {
+  position: relative;
+  z-index: 2;
+}
+
+.project__intro-2 {
+  position: relative;
+  left: -65px;
+  top: -85px;
+  z-index: 1;
+}
+
+.project__adaptive {
+  margin-bottom: 115px;
+}
+
+.project__adaptive-wrapper {
+  position: relative;
+  padding: 49% 0 0 12%;
+}
+
+.project__adaptive-mobile-wrapper-1,
+.project__adaptive-mobile-wrapper-2 {
+  position: absolute;
+  top: 6%;
+  width: 17%;
+  padding-top: 35%;
+  background: url('../img/iphone.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.project__adaptive-mobile-wrapper-1 {
+  left: 8%;
+}
+
+.project__adaptive-mobile-wrapper-2 {
+  left: 33%;
+}
+
+.project__adaptive-mobile-screenshot {
+  position: absolute;
+  top: 12%;
+  left: 6%;
+  width: 88%;
+}
+
+.project__adaptive-tablet-wrapper {
+  position: absolute;
+  top: 6%;
+  right: 0;
+  width: 42%;
+  padding-top: 35%;
+  background: url('../img/tablet.png') 0% 50% no-repeat;
+  background-size: cover;
+}
+
+.project__adaptive-tablet-screenshot {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  width: 96%;
+}
+
+.project__innerpages {
+  margin-bottom: 134px;
+}
+
+.project__innerpages-wrapper {
+  position: relative;
+  padding-top: 110%;
+  overflow: hidden;
+} 
+
+.project__innerpages-1 {
+  position: absolute;
+  left: 8%;
+  top: 4%;
+  z-index: 1;
+  width: 42%;
+}
+
+.project__innerpages-2 {
+  position: absolute;
+  left: 13%;
+  top: 38%;
+  z-index: 2;
+  width: 42%;
+}
+
+.project__innerpages-3 {
+  position: absolute;
+  left: 47%;
+  top: 8%;
+  z-index: 3;
+  width: 42%;
+}
+
+.project__addpages {
+  margin-bottom: 170px;
+}
+
+.project__laptop-wrapper {
+  position: relative;
+  padding-top: 67%;
+  background: url('../img/laptop.png') 0% 0% no-repeat;
+  background-size: cover;
+}
+
+.project__laptop {
+  position: absolute;
+  top: 6%;
+  left: 19%;
+  width: 66%;
+}
+
+.project__more {
+  margin-bottom: 180px;
+}
+
+.project__more-title {
+  margin-bottom: 60px;
+  color: #1c1b1b;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.project__more-list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 75px;
+  @media (min-width: $breakpoint-xlarge) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

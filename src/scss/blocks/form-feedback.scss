@@ -1,5 +1,7 @@
 .form-feedback {
-
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .form-feedback__title {
@@ -8,6 +10,7 @@
   color: #fff;
   font-size: 30px;
   font-weight: 700;
+  line-height: 1;
 }
 
 .form-feedback__row {

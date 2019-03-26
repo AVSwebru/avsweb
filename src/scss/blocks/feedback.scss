@@ -1,0 +1,12 @@
+.feedback {
+  position: relative;
+  padding: 125px 12% 120px;
+  background: url('../img/bg-feedback.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.feedback__inner {
+  display: flex;
+  justify-content: center;
+  // height: 100%; 
+}

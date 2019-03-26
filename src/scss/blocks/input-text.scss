@@ -1,7 +1,9 @@
 .input-text {
   width: 360px;
-  height: 40px;
+  max-width: 100%;
   padding-left: 50px;
+  height: 40px;
+  box-sizing: border-box;
   background: transparent;
   border: none;
   border-bottom: 3px solid rgba(255,255,255,0.5);

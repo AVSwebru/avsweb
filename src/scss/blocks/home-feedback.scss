@@ -1,5 +1,8 @@
 .home-feedback {
-
+  border-top: 1px solid #141414;
+  @media (min-width: $breakpoint-small) {
+    border: none;
+  }
 }
 
 .home-feedback__leftside {
@@ -12,7 +15,7 @@
 }
 
 .home-feedback__rightside {
-  background: url('../img/bg-home-feedback.jpg') 50% 50% no-repeat;
+  background: url('../img/bg-feedback.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -21,4 +24,9 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 90px 0;
+  box-sizing: border-box;
+  @media (min-width: $breakpoint-small) {
+    padding: 100px 0;
+  }
 }

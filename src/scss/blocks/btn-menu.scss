@@ -1,8 +1,15 @@
 .btn-menu {
+  @include reset-btn;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  z-index: 2;
   width: 105px;
   height: 55px;
-  background: #1e1e1e;
+  
   clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform: translateX(-50%);
+  transition: background-color 0.25s;
   &::before {
     content: '';
     position: absolute;
@@ -12,6 +19,7 @@
     height: 3px;
     background: #ececec;
     transform: translateX(-50%);
+    transition: transform 0.25s;
   }
   &::after {
     content: '';
@@ -22,6 +30,33 @@
     height: 3px;
     background: #ececec;
     transform: translateX(-50%);
-
+    transition: transform 0.25s;
+  }
+  &--homepage {
+    background-color: #1e1e1e;
+  }
+  &--innerpage {
+    background-color: #535353;
+    @media (min-width: $breakpoint-small) {
+      left: 220px;
+    }
+    @media (min-width: $breakpoint-medium) {
+      left: 330px;
+    }
+    @media (min-width: $breakpoint-xlarge) {
+      left: 430px;
+    }
+  }
+  &.active {
+    background-color: #353535;
+    transition: background-color 0.25s;
+    &::before {
+      transform: translateX(-50%) translateY(4px) rotate(-45deg);
+      transition: transform 0.25s;
+    }
+    &::after {
+      transform: translateX(-50%) translateY(-4px) rotate(45deg);
+      transition: transform 0.25s;
+    }
   }
 }
