@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const env = process.env.WEBPACK_ENV;
+
 // const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const PATHS = {

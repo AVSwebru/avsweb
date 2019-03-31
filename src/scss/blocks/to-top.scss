@@ -18,7 +18,8 @@
     height: 14px;
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translate(-50%, 0) rotate(-45deg);
+    transition: transform 0.25s;
   }
   &::after {
     content: '';
@@ -29,13 +30,20 @@
     height: 14px;
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translate(-50%, 0) rotate(-45deg);
+    transition: transform 0.25s;
   }
   &:hover {
     background-color: #060606;
     transition: background-color 0.25s;
     &::before {
-      
+      transform: translate(-50%, -5px) rotate(-45deg);
+      transition: transform 0.25s;
+    }
+    &::after {
+      transform: translate(-50%, -5px) rotate(-45deg);
+      transition: transform 0.25s;
     }
   }
+  
 }

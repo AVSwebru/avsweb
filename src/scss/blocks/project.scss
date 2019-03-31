@@ -1,7 +1,7 @@
 .project__work-link {
   @include reset-link;
   display: inline-block;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   color: #672aa0;
   font-size: 15px;
   &:hover .project__work-link-icon {
@@ -50,6 +50,7 @@
   max-width: 370px;
   margin-bottom: 40px;
   font-size: 15px;
+  line-height: 1.1;
 }
 
 .project__intro {
@@ -57,21 +58,26 @@
 }
 
 .project__intro-wrapper {
-  display: flex;
-  padding: 120px 12%;
-  margin-bottom: 95px;
+  position: relative;
+  padding-top: 158%;
+  margin-bottom: 85px;
 }
 
 .project__intro-1 {
-  position: relative;
+  position: absolute;
+  top: 5%;
+  left: 8%;
   z-index: 2;
+  width: 42%;
+  box-shadow: 12px 21px 81px rgba(80, 109, 106, 0.35);
 }
 
 .project__intro-2 {
-  position: relative;
-  left: -65px;
-  top: -85px;
+  position: absolute;
+  top: 2%;
+  left: 47%;
   z-index: 1;
+  width: 42%;
 }
 
 .project__adaptive {
@@ -86,9 +92,9 @@
 .project__adaptive-mobile-wrapper-1,
 .project__adaptive-mobile-wrapper-2 {
   position: absolute;
-  top: 6%;
-  width: 17%;
-  padding-top: 35%;
+  top: 13%;
+  width: 18%;
+  padding-top: 37%;
   background: url('../img/iphone.png') 50% 50% no-repeat;
   background-size: cover;
 }
@@ -98,7 +104,7 @@
 }
 
 .project__adaptive-mobile-wrapper-2 {
-  left: 33%;
+  left: 31%;
 }
 
 .project__adaptive-mobile-screenshot {
@@ -110,10 +116,10 @@
 
 .project__adaptive-tablet-wrapper {
   position: absolute;
-  top: 6%;
+  top: 13%;
   right: 0;
-  width: 42%;
-  padding-top: 35%;
+  width: 47%;
+  padding-top: 36%;
   background: url('../img/tablet.png') 0% 50% no-repeat;
   background-size: cover;
 }
@@ -121,8 +127,8 @@
 .project__adaptive-tablet-screenshot {
   position: absolute;
   top: 5%;
-  left: 12%;
-  width: 96%;
+  left: 11%;
+  width: 89%;
 }
 
 .project__innerpages {
@@ -131,7 +137,7 @@
 
 .project__innerpages-wrapper {
   position: relative;
-  padding-top: 110%;
+  padding-top: 113%;
   overflow: hidden;
 } 
 
@@ -145,18 +151,18 @@
 
 .project__innerpages-2 {
   position: absolute;
-  left: 13%;
+  left: 15%;
   top: 38%;
-  z-index: 2;
-  width: 42%;
+  z-index: 3;
+  width: 43%;
 }
 
 .project__innerpages-3 {
   position: absolute;
   left: 47%;
-  top: 8%;
-  z-index: 3;
-  width: 42%;
+  top: 11%;
+  z-index: 2;
+  width: 44%;
 }
 
 .project__addpages {
@@ -165,7 +171,7 @@
 
 .project__laptop-wrapper {
   position: relative;
-  padding-top: 67%;
+  padding-top: 60%;
   background: url('../img/laptop.png') 0% 0% no-repeat;
   background-size: cover;
 }
@@ -173,8 +179,8 @@
 .project__laptop {
   position: absolute;
   top: 6%;
-  left: 19%;
-  width: 66%;
+  left: 17.3%;
+  width: 59%;
 }
 
 .project__more {

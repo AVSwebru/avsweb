@@ -4,7 +4,13 @@
 
 .home-portfolio__list {
   @include reset-list;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
+  @media (min-width: $breakpoint-small) {
+    margin-bottom: 200px;
+  }
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 355px;
+  }
 }
 
 .home-portfolio__rightside { 
@@ -14,7 +20,7 @@
     padding: 160px 40px 0 40px;
   }
   @media (min-width: $breakpoint-xlarge) {
-    padding: 160px 65px 0 100px;
+    padding: 270px 65px 0 100px;
   }
 }
 
@@ -60,6 +66,10 @@
       transition: transform 0.5s;
     }
   }
+}
+
+.home-portfolio__list-item {
+  margin-bottom: 100px;
 }
 
 .home-portfolio__view-all-text {

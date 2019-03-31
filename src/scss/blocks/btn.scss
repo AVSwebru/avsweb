@@ -3,6 +3,7 @@
   @include reset-link;
   position: relative;
   display: inline-block;
+  min-width: 160px;
   padding: 15px;
   background: #1e1e1e;
   overflow: hidden;
@@ -22,6 +23,11 @@
   }
   &--wide {
     width: 100%;
+  }
+  &--feedback {
+    .btn__caption {
+      font-size: 18px;
+    }
   }
   &:hover {
     color: #fff;

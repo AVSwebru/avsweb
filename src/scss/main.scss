@@ -12,6 +12,7 @@
 @import "blocks/service-item";
 @import "blocks/container";
 @import "blocks/main-header";
+@import "blocks/contacts-block";
 @import "blocks/btn-menu";
 @import "blocks/types";
 @import "blocks/type-item";
@@ -19,7 +20,6 @@
 @import "blocks/btn";
 @import "blocks/home-portfolio";
 @import "blocks/project-item";
-@import "blocks/vertical-text";
 @import "blocks/home-feedback";
 @import "blocks/form-feedback";
 @import "blocks/input-text";
@@ -44,9 +44,10 @@
 @import "blocks/btn-show-more";
 @import "blocks/portfolio";
 @import "blocks/project";
-@import "blocks/paddings";
+@import "blocks/wrapper";
 @import "blocks/map";
-
+@import "blocks/logo";
+@import "blocks/btn-contacts"; 
 
 
 

@@ -1,0 +1,51 @@
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 980;
+  &:hover {
+    .logo__text {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+    }
+  }
+  &--opened {
+    .logo__text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &--light {
+    fill: #fff;
+  }
+  &--dark {
+    fill: #060606;
+  }
+  &.opened-menu {
+    position: fixed;
+    .logo__text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @media (min-width: $breakpoint-small) {
+    position: fixed;
+    z-index: 982;
+  }
+}
+
+.logo svg {
+  width: 150px;
+  height: 50px;
+}
+
+.logo__text {
+  display: none;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  @media (min-width: $breakpoint-small) {
+    display: block;
+  }
+}

@@ -1,22 +1,21 @@
 .btn-menu {
   @include reset-btn;
-  position: absolute;
-  top: -30px;
+  position: fixed;
+  top: 0;
   left: 50%;
-  z-index: 2;
-  width: 105px;
-  height: 55px;
-  
+  z-index: 983;
+  width: 88px;
+  height: 48px;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
   transform: translateX(-50%);
   transition: background-color 0.25s;
   &::before {
     content: '';
     position: absolute;
-    top: 16px;
+    top: 11px;
     left: 50%;
     width: 26px;
-    height: 3px;
+    height: 2px;
     background: #ececec;
     transform: translateX(-50%);
     transition: transform 0.25s;
@@ -24,10 +23,10 @@
   &::after {
     content: '';
     position: absolute;
-    top: 24px;
+    top: 18px;
     left: 50%;
     width: 26px;
-    height: 3px;
+    height: 2px;
     background: #ececec;
     transform: translateX(-50%);
     transition: transform 0.25s;
@@ -47,15 +46,21 @@
       left: 430px;
     }
   }
-  &.active {
+  &--light {
+    background-color: #4e4e4e;
+  }
+  &--dark {
+    background-color: #1e1e1e;
+  }
+  &.opened-menu, &.opened-contacts {
     background-color: #353535;
     transition: background-color 0.25s;
     &::before {
-      transform: translateX(-50%) translateY(4px) rotate(-45deg);
+      transform: translateX(-50%) translateY(6px) rotate(-45deg);
       transition: transform 0.25s;
     }
     &::after {
-      transform: translateX(-50%) translateY(-4px) rotate(45deg);
+      transform: translateX(-50%) translateY(-1px) rotate(45deg);
       transition: transform 0.25s;
     }
   }

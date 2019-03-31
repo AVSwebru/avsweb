@@ -39,11 +39,15 @@
   color: #fff;
   font-family: $font-decor;
   font-size: 50px;
+  font-weight: 700;
   line-height: 1;
   @media (min-width: $breakpoint-medium) {
     font-size: 90px;
   }
   @media (min-width: $breakpoint-small) {
     font-size: 70px;
+  }
+  @media (min-width: $breakpoint-large) {
+    font-size: 92px;
   }
 }

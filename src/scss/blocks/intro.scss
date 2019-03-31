@@ -1,55 +1,87 @@
 .intro {
   position: relative;
   min-height: 100vh;
-  // background: url('../img/bg-intro.jpg') 50% 50% no-repeat;
-  // background-size: cover;
-}
-
-.intro__leftside {
-  position: relative;
   background: url('../img/bg-intro-left.jpg') 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.intro__rightside {
-  position: relative;
-  background: url('../img/bg-intro-right.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 
 .intro__title {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__title-image {
+  display: none;
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.intro__title-text {
+  position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 3;
-  width: 1000px;
-  background-color: #fff;
-  background-image: 
-    linear-gradient(to left, #fff, #fff),
-    url('../img/bg-intro.jpg');
-  background-position: 
-    0 0,
-    50% 0;
-  background-repeat: 
-    no-repeat, 
-    no-repeat;
-  background-size: 
-    50% 100%, 
-    50% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-family: $font-decor;
-  font-size: 128px;
-  transform: translate(-50%, -50%);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.1;
+  @media (min-width: $breakpoint-small) {
+    font-size: 75px;
+  }
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
 }
 
 .intro__slogan {
   position: absolute;
   bottom: 50px;
-  left: 40px;
-  font-size: 20px;
+  left: 50%;
+  width: 80%;
+  box-sizing: border-box;
+  padding-left: 50px;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 16px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 35px;
+    height: 1px;
+    background-color: #fff;
+  }
+  @media (min-width: $breakpoint-small) {
+    left: 70px;
+    width: auto;
+    padding-left: 80px;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    font-size: 20px;
+    &::before {
+      width: 55px;
+    }
+  }
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 110px;
+    &::before {
+      width: 75px;
+    }
+  }
 }
 
 .intro__rightside-inner {

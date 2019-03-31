@@ -42,15 +42,18 @@
   width: 100%;
   min-height: 490px;
   box-sizing: border-box;
-  padding: 60px 40px 35px;
+  padding: 50px 20px 35px;
   background-color: #fff;
+  @media (min-width: $breakpoint-small) {
+    padding: 50px 40px 35px;
+  }
   @media (min-width: $breakpoint-large) {
     width: calc(50% - 20px);
   }
 }
 
 .type-item__title {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: #343434;
   font-size: 30px;
   font-weight: 700;
@@ -72,6 +75,14 @@
     transform-origin: 0% 50%;
     transition: transform 0.25s;
   }
+}
+
+.type-item__list {
+  @include reset-list;
+}
+
+li.type-item__list-item:not(:last-of-type) {
+  margin-bottom: 15px;
 }
 
 .type-item__price {

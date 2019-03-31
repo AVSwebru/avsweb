@@ -1,7 +1,9 @@
 .portfolio__list {
   @include reset-list;
-  li {
-    display: flex;
+}
+
+.portfolio__list-item {
+  display: flex;
     align-items: flex-start;
     margin-bottom: 100px;
     &:nth-child(2n) {
@@ -10,5 +12,4 @@
     &:nth-child(2n+1) {
       justify-content: flex-start;
     }
-  }
 }

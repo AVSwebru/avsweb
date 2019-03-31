@@ -7,7 +7,6 @@
     width: 80%;
   }
   @media (min-width: $breakpoint-medium) {
-    // width: 690px;
     width: 100%;
     max-width: 775px;
     display: block;
@@ -17,20 +16,21 @@
 }
 
 .project-item__title {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #1e1e1e;
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
 }
 
-.project-item__title-row {
+.project-item__title-row:not(:last-of-type) {
   display: block;
+  margin-bottom: 10px;
 }
 
 .project-item__image-container {
   width: 100%;
-  padding-top: 70%;
+  padding-top: 66%;
   margin-bottom: 20px;
   order: 1;
   @media (min-width: $breakpoint-medium) {
@@ -75,8 +75,8 @@
     margin-bottom: 0;
   }
   @media (min-width: $breakpoint-xlarge) {
-    bottom: 0;
-    left: 55px;
+    bottom: -7px;
+    left: 70px;
     transform: rotate(-90deg);
     transform-origin: left;
   }

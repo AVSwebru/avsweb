@@ -27,11 +27,13 @@
   top: 60%;
   left: 50%;
   z-index: 1;
+  transform: translate(-50%);
+  white-space: nowrap;
   opacity: 0.05;
   color: #e6e6e6;
   font-size: 48px;
   font-weight: 700;
-  transform: translate(-50%);
+
   @media (min-width: $breakpoint-small) {
     top: 44%;
     left: 50%;
