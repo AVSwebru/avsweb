@@ -1,5 +1,6 @@
 .nav-main {
-  display: none;
+  visibility: hidden;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -13,7 +14,7 @@
   overflow-y: scroll;
   background-color: #1e1e1e;
   &.opened-menu {
-    display: flex;
+    visibility: visible;
   }
 }
 

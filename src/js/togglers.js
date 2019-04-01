@@ -4,30 +4,51 @@ import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 (function() {
 
   var btnMenu = document.querySelector('.js-menu-toggler')
-  var  btnContacts = document.querySelector('.js-contacts-toggler')
-  var  menu = document.querySelector('.js-menu-main')
-  var  contacts = document.querySelector('.js-contacts')
-  var  logo = document.querySelector('.js-logo')
-
+  var menu = document.querySelector('.js-menu')
+  var contacts = document.querySelector('.js-contacts-block')
+  var logo = document.querySelector('.js-logo')
+  var isMenuOpened = false;
   var menuElements = [
-        btnMenu,
-        btnContacts,
-        menu,
-        contacts,
-        logo
-      ]
+      btnMenu,
+      menu,
+      contacts,
+      logo
+    ]
 
-  btnMenu.addEventListener('click', () => {
+    var menuOpen = new TimelineMax();
 
+    menuOpen
+      .from(document.querySelector('.js-menu'), 0.5, {opacity: 0})
+      .staggerFrom(document.querySelectorAll('.nav-main__item'), 0.25, { ease:
+        Expo. easeOut, y: -30, opacity: 0}, 0.15);
+
+
+ 
+    
       
-     
-      // menuElements.forEach(element => {
-        
-      //   element.classList.add('opened-menu');
-      // });
-    }
-  })
 
+    btnMenu.addEventListener('click', () => {
+      if (isMenuOpened) {
+
+       
+        TweenMax.fromTo(document.querySelector('.js-menu'), 0.25, {opacity: 1}, {opacity: 0, onComplete: () => {
+          menuElements.forEach(element => {
+            element.classList.remove('opened-menu');
+          });
+        }})
+
+       
+        isMenuOpened = false;
+      } else {
+        menuElements.forEach(element => {
+          element.classList.add('opened-menu');
+        });
+        menuOpen.time(0);
+        menuOpen.play();
+      
+        isMenuOpened = true;
+      }
+    });
 
 })()
 
