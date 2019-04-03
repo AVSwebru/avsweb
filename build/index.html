@@ -9,12 +9,12 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="js-homepage"> 
   <div class="page-wrapper">
     <div class="container">
       <header class="main-header">
-        <a class="main-header__logo">
-          <svg width="180" height="50" fill="#fff" viewBox="0 0 936 316">
+        <a class="logo logo--light logo--opened js-logo">
+          <svg viewBox="0 0 936 316">
             <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
                               C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
                               l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
@@ -33,89 +33,93 @@
           </svg>
         </a>
         <button class="btn-menu btn-menu--homepage js-menu-toggler"
-          data-uk-toggle="target: .js-menu-main, .js-menu-toggler; cls: active" type="button"></button>
-        <nav class="nav-main js-menu-main">
-          <ul class="nav-main__list">
-            <li class="nav-main__item">
+           type="button"></button>
+        <nav class="nav-main js-menu">
+          <ul class="nav-main__list js-nav-list">
+            <li class="nav-main__item js-nav-item">
               <a class="nav-main__link" href="#">
                 О нас
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item js-nav-item">
               <a class="nav-main__link active" href="#">
                 Услуги
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item js-nav-item">
               <a class="nav-main__link" href="#">
                 Типы сайтов
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item js-nav-item">
               <a class="nav-main__link" href="#">
                 Портфолио
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item js-nav-item">
               <a class="nav-main__link" href="#">
                 Клиенты
               </a>
             </li>
-            <li class="nav-main__item">
+            <li class="nav-main__item js-nav-item">
               <a class="nav-main__link" href="#">
                 Контакты
               </a>
             </li>
           </ul>
         </nav>
-        <div class="main-header__contacts">
-          <a class="main-header__tel" href="tel:74732406226">
-            <svg class="main-header__tel-icon">
+        <div class="contacts-block contacts-block--opened js-contacts-block">
+          <a class="contacts-block__tel js-contacts-tel" href="tel:74732406226">
+            <svg class="contacts-block__tel-icon">
               <use xlink:href="../img/sprite.svg#phone" />
             </svg>
-            <span class="main-header__tel-text">+7 473 240-6226</span>
+            <span class="contacts-block__tel-text">+7 473 240-6226</span>
           </a>
-          <ul class="main-header__social-list">
-            <li class="main-header__social-item">
-              <a class="main-header__social-link" href="#" target="_blank">
-                <svg class="main-header__social-icon" width="15" height="8">
+          <ul class="contacts-block__social-list js-social-list">
+            <li class="contacts-block__social-item js-social-item">
+              <a class="contacts-block__social-link" href="#" target="_blank">
+                <svg class="contacts-block__social-icon" width="15" height="8">
                   <use xlink:href="../img/sprite.svg#vk" />
                 </svg>
               </a>
             </li>
-            <li class="main-header__social-item">
-              <a class="main-header__social-link" href="#" target="_blank">
-                <svg class="main-header__social-icon" width="12" height="12">
+            <li class="contacts-block__social-item js-social-item">
+              <a class="contacts-block__social-link" href="#" target="_blank">
+                <svg class="contacts-block__social-icon" width="12" height="12">
                   <use xlink:href="../img/sprite.svg#in" />
                 </svg>
               </a>
             </li>
-            <li class="main-header__social-item">
-              <a class="main-header__social-link" href="#" target="_blank">
-                <svg class="main-header__social-icon" width="8" height="15">
+            <li class="contacts-block__social-item js-social-item">
+              <a class="contacts-block__social-link" href="#" target="_blank">
+                <svg class="contacts-block__social-icon" width="8" height="15">
                   <use xlink:href="../img/sprite.svg#fb" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <button class="btn-contacts js-contacts-toggler"  type="button">
+          <svg class="btn-contacts__phone">
+            <use xlink:href="../img/sprite.svg#phone" />
+          </svg>
+          <svg class="btn-contacts__close">
+            <use xlink:href="../img/sprite.svg#close" />
+          </svg>
+        </button>
       </header>
       <main class="page">
         <section class="intro home-section">
           <h1 class="intro__title">
-            Разработка
-            и продвижение сайтов
+            <img class="intro__title-image" src="img/mask-title.svg?bc24b96e3448ffbd730693c64db91cf7" alt="Разработка и продвижение сайтов">
+            <span class="intro__title-text">Разработка и продвижение сайтов</span>
           </h1>
-          <div class="intro__leftside home-section__leftside">
-            <div class="intro__slogan vertical-text vertical-text--light vertical-text--long-dash">
-              Привлекаем клиентов<br>
-              и увеличиваем продажи!
-            </div>
-          </div>
-          <div class="intro__rightside home-section__rightside">
+          <div class="intro__slogan vertical-text">
+            Привлекаем клиентов<br>
+            и увеличиваем продажи!
           </div>
         </section>
-        <section class="home-services home-section">
+        <section class="home-services home-section js-home-services">
           <div class="home-section__leftside">
             <div class="home-services__title-wrapper home-section__title-wrapper" data-uk-sticky="bottom: true">
               <h2 class="home-services__title home-section__title">
@@ -125,8 +129,8 @@
           </div>
           <div class="home-services__rightside home-section__rightside">
             <ul class="home-services__list">
-              <li>
-                <a class="service-item">
+              <li class="home-services__list-item">
+                <a class="service-item js-service-item">
                   <span class="service-item__title">
                     Разработка сайтов «под ключ»
                   </span>
@@ -136,10 +140,11 @@
                     типа сайта, сферы вашей деятельности и качества создаваемого проекта.
                   </span>
                   <span class="service-item__arrow"></span>
+                  <span class="service-item__border js-service-border"></span>
                 </a>
               </li>
-              <li>
-                <a class="service-item">
+              <li class="home-services__list-item">
+                <a class="service-item js-service-item">
                   <span class="service-item__title">
                     Разработка сайтов «под ключ»
                   </span>
@@ -149,10 +154,11 @@
                     типа сайта, сферы вашей деятельности и качества создаваемого проекта.
                   </span>
                   <span class="service-item__arrow"></span>
+                  <span class="service-item__border js-service-border"></span>
                 </a>
               </li>
-              <li>
-                <a class="service-item">
+              <li class="home-services__list-item">
+                <a class="service-item js-service-item">
                   <span class="service-item__title">
                     Разработка сайтов «под ключ»
                   </span>
@@ -162,10 +168,11 @@
                     типа сайта, сферы вашей деятельности и качества создаваемого проекта.
                   </span>
                   <span class="service-item__arrow"></span>
+                  <span class="service-item__border js-service-border"></span>
                 </a>
               </li>
-              <li>
-                <a class="service-item">
+              <li class="home-services__list-item">
+                <a class="service-item js-service-item">
                   <span class="service-item__title">
                     Разработка сайтов «под ключ»
                   </span>
@@ -175,10 +182,11 @@
                     типа сайта, сферы вашей деятельности и качества создаваемого проекта.
                   </span>
                   <span class="service-item__arrow"></span>
+                  <span class="service-item__border js-service-border"></span>
                 </a>
               </li>
-              <li>
-                <a class="service-item">
+              <li class="home-services__list-item">
+                <a class="service-item js-service-item">
                   <span class="service-item__title">
                     Разработка сайтов «под ключ»
                   </span>
@@ -188,12 +196,13 @@
                     типа сайта, сферы вашей деятельности и качества создаваемого проекта.
                   </span>
                   <span class="service-item__arrow"></span>
+                  <span class="service-item__border js-service-border"></span>
                 </a>
               </li>
             </ul>
           </div>
         </section>
-        <section class="types home-section js-types">
+        <section class="types home-section js-type-items">
           <div class="types__leftside home-section__leftside">
             <div class="types__title-wrapper home-section__title-wrapper" data-uk-sticky="bottom: true">
               <h2 class="types__title home-section__title">
@@ -204,16 +213,16 @@
           <div class="types__rightside home-section__rightside">
             <ul class="types__list">
               <li>
-                <div class="type-item type-item--left">
+                <div class="type-item type-item--left js-type-item">
                   <div class="type-item__content">
                     <div class="type-item__top">
-                      <h3 class="type-item__title">
+                      <h3 class="type-item__title js-type-item-title">
                         Landing Page
                       </h3>
                       <ul class="type-item__list custom-list">
-                        <li>Базовый дизайн</li>
-                        <li>Уникальный дизайн</li>
-                        <li>Индивидуальный подход</li>
+                        <li class="type-item__list-item js-type-item-list-item">Базовый дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Уникальный дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Индивидуальный подход</li>
                       </ul>
                     </div>
                     <div class="type-item__bottom">
@@ -223,24 +232,27 @@
                         </span>
                         <span class="btn__bg"></span>
                       </button>
-                      <div class="type-item__price">
+                      <div class="type-item__price js-type-item-price">
                         от 75 000 <span class="rubl" >j</span>
                       </div>
                     </div>
                   </div>
+                  <div class="type-item__bg uk-cover-container js-type-item-bg">
+                    <img data-uk-cover src="img/bg-type-item.jpg?89638bd8c4dfb0bae56b801eb962dabc" alt="">
+                  </div>
                 </div>
               </li>
               <li>
-                <div class="type-item type-item--right">
+                <div class="type-item type-item--right js-type-item">
                   <div class="type-item__content">
                     <div class="type-item__top">
-                      <h3 class="type-item__title">
+                      <h3 class="type-item__title js-type-item-title">
                         Landing Page
                       </h3>
                       <ul class="type-item__list custom-list">
-                        <li>Базовый дизайн</li>
-                        <li>Уникальный дизайн</li>
-                        <li>Индивидуальный подход</li>
+                        <li class="type-item__list-item js-type-item-list-item">Базовый дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Уникальный дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Индивидуальный подход</li>
                       </ul>
                     </div>
                     <div class="type-item__bottom">
@@ -250,10 +262,103 @@
                         </span>
                         <span class="btn__bg"></span>
                       </button>
-                      <div class="type-item__price">
+                      <div class="type-item__price js-type-item-price">
                         от 75 000 <span class="rubl" >j</span>
                       </div>
                     </div>
+                  </div>
+                  <div class="type-item__bg uk-cover-container js-type-item-bg">
+                    <img data-uk-cover src="img/bg-type-item.jpg?89638bd8c4dfb0bae56b801eb962dabc" alt="">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="type-item type-item--left js-type-item">
+                  <div class="type-item__content">
+                    <div class="type-item__top">
+                      <h3 class="type-item__title js-type-item-title">
+                        Landing Page
+                      </h3>
+                      <ul class="type-item__list custom-list">
+                        <li class="type-item__list-item js-type-item-list-item">Базовый дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Уникальный дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Индивидуальный подход</li>
+                      </ul>
+                    </div>
+                    <div class="type-item__bottom">
+                      <button class="type-item__btn btn" type="button">
+                        <span class="btn__caption">
+                          Получить коммерческое предложение
+                        </span>
+                        <span class="btn__bg"></span>
+                      </button>
+                      <div class="type-item__price js-type-item-price">
+                        от 75 000 <span class="rubl" >j</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="type-item__bg uk-cover-container js-type-item-bg">
+                    <img data-uk-cover src="img/bg-type-item.jpg?89638bd8c4dfb0bae56b801eb962dabc" alt="">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="type-item type-item--right js-type-item">
+                  <div class="type-item__content">
+                    <div class="type-item__top">
+                      <h3 class="type-item__title js-type-item-title">
+                        Landing Page
+                      </h3>
+                      <ul class="type-item__list custom-list">
+                        <li class="type-item__list-item js-type-item-list-item">Базовый дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Уникальный дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Индивидуальный подход</li>
+                      </ul>
+                    </div>
+                    <div class="type-item__bottom">
+                      <button class="type-item__btn btn" type="button">
+                        <span class="btn__caption">
+                          Получить коммерческое предложение
+                        </span>
+                        <span class="btn__bg"></span>
+                      </button>
+                      <div class="type-item__price js-type-item-price">
+                        от 75 000 <span class="rubl" >j</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="type-item__bg uk-cover-container js-type-item-bg">
+                    <img data-uk-cover src="img/bg-type-item.jpg?89638bd8c4dfb0bae56b801eb962dabc" alt="">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="type-item type-item--left js-type-item">
+                  <div class="type-item__content">
+                    <div class="type-item__top">
+                      <h3 class="type-item__title js-type-item-title">
+                        Landing Page
+                      </h3>
+                      <ul class="type-item__list custom-list">
+                        <li class="type-item__list-item js-type-item-list-item">Базовый дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Уникальный дизайн</li>
+                        <li class="type-item__list-item js-type-item-list-item">Индивидуальный подход</li>
+                      </ul>
+                    </div>
+                    <div class="type-item__bottom">
+                      <button class="type-item__btn btn" type="button">
+                        <span class="btn__caption">
+                          Получить коммерческое предложение
+                        </span>
+                        <span class="btn__bg"></span>
+                      </button>
+                      <div class="type-item__price js-type-item-price">
+                        от 75 000 <span class="rubl" >j</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="type-item__bg uk-cover-container js-type-item-bg">
+                    <img data-uk-cover src="img/bg-type-item.jpg?89638bd8c4dfb0bae56b801eb962dabc" alt="">
                   </div>
                 </div>
               </li>
@@ -270,24 +375,84 @@
           </div>
           <div class="home-portfolio__rightside home-section__rightside">
             <ul class="home-portfolio__list">
-              <li>
-                <div class="project-item">
+              <li class="home-portfolio__list-item">
+                <div class="project-item js-project-item">
                   <div class="project-item__title-wrapper">
                     <h3 class="project-item__title">
-                      Посуда для баров <br> и ресторанов
+                      <span class="project-item__title-row">
+                        <span class="project-item__title-text js-project-item-title-1">Посуда для баров</span>
+                        <span class="project-item__title-decor js-project-item-title-decor-1" style="background-color: #394289"></span>
+                      </span> 
+                      <span class="project-item__title-row">
+                        <span class="project-item__title-text js-project-item-title-2">и ресторанов</span>
+                        <span class="project-item__title-decor js-project-item-title-decor-2" style="background-color: #394289"></span>
+                      </span>
                     </h3>
-                    <a class="project-item__link btn" href="#" style="background-color: #394289">
+                    <a class="project-item__link btn js-project-item-btn" href="#" style="background-color: #394289">
                       <span class="btn__caption">Смотреть проект →</span>
                     </a>
                   </div>
-                  <div class="project-item__type">
+                  <div class="project-item__type js-project-item-type">
                     Интернет-магазин
                   </div>
                   <div class="project-item__image-container uk-cover-container">
                     <img data-uk-cover src="img/bg-project-item.jpg?2e3735073799c980e68cdb5567c3572e" alt="">
+                    <div class="project-item__image-decor js-project-item-image-decor"></div>
                   </div>
                 </div>
               </li>
+              <li class="home-portfolio__list-item">
+                  <div class="project-item js-project-item">
+                      <div class="project-item__title-wrapper">
+                        <h3 class="project-item__title">
+                          <span class="project-item__title-row">
+                            <span class="project-item__title-text js-project-item-title-1">Посуда для баров</span>
+                            <span class="project-item__title-decor js-project-item-title-decor-1" style="background-color: #394289"></span>
+                          </span> 
+                          <span class="project-item__title-row">
+                            <span class="project-item__title-text js-project-item-title-2">и ресторанов</span>
+                            <span class="project-item__title-decor js-project-item-title-decor-2" style="background-color: #394289"></span>
+                          </span>
+                        </h3>
+                        <a class="project-item__link btn js-project-item-btn" href="#" style="background-color: #394289">
+                          <span class="btn__caption">Смотреть проект →</span>
+                        </a>
+                      </div>
+                      <div class="project-item__type js-project-item-type">
+                        Интернет-магазин
+                      </div>
+                      <div class="project-item__image-container uk-cover-container">
+                        <img data-uk-cover src="img/bg-project-item.jpg?2e3735073799c980e68cdb5567c3572e" alt="">
+                        <div class="project-item__image-decor js-project-item-image-decor"></div>
+                      </div>
+                    </div>
+                </li>
+                <li class="home-portfolio__list-item">
+                    <div class="project-item js-project-item">
+                        <div class="project-item__title-wrapper">
+                          <h3 class="project-item__title">
+                            <span class="project-item__title-row">
+                              <span class="project-item__title-text js-project-item-title-1">Посуда для баров</span>
+                              <span class="project-item__title-decor js-project-item-title-decor-1" style="background-color: #394289"></span>
+                            </span> 
+                            <span class="project-item__title-row">
+                              <span class="project-item__title-text js-project-item-title-2">и ресторанов</span>
+                              <span class="project-item__title-decor js-project-item-title-decor-2" style="background-color: #394289"></span>
+                            </span>
+                          </h3>
+                          <a class="project-item__link btn js-project-item-btn" href="#" style="background-color: #394289">
+                            <span class="btn__caption">Смотреть проект →</span>
+                          </a>
+                        </div>
+                        <div class="project-item__type js-project-item-type">
+                          Интернет-магазин
+                        </div>
+                        <div class="project-item__image-container uk-cover-container">
+                          <img data-uk-cover src="img/bg-project-item.jpg?2e3735073799c980e68cdb5567c3572e" alt="">
+                          <div class="project-item__image-decor js-project-item-image-decor"></div>
+                        </div>
+                      </div>
+                  </li>
             </ul>
             <a class="home-portfolio__view-all" href="#">
               <span class="home-portfolio__view-all-text">
@@ -307,7 +472,7 @@
           </div>
           <div class="home-feedback__rightside home-section__rightside">
             <div class="home-feedback__inner">
-              <form class="form-feedback">
+              <form class="form-feedback js-feedback">
                 <h3 class="form-feedback__title">
                   Заполните форму
                 </h3>
@@ -323,7 +488,7 @@
                   <input class="input-text input-text--email" type="email" placeholder="Email" aria-labelledby="Email"
                     required>
                 </div>
-                <button class="form-feedback__submit btn btn--wide" type="submit">
+                <button class="form-feedback__submit btn btn--wide btn--feedback" type="submit">
                   <span class="btn__caption">
                     Отправить
                   </span>
@@ -338,7 +503,7 @@
             </div>
           </div>
         </section>
-        <section class="home-clients home-section">
+        <section class="home-clients home-section js-home-clients">
           <div class="home-feedback__leftside home-section__leftside">
             <div class="home-clients__title-wrapper home-section__title-wrapper" data-uk-sticky="bottom: true">
               <h2 class="home-clients__title home-section__title">
@@ -348,34 +513,34 @@
           </div>
           <div class="home-clients__rightside home-section__rightside">
             <ul class="home-clients__list">
-              <li>
-                <img src="img/client-1.png?f194aa5c0e3a6f135978c27d40aceaef" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-1.jpg?5fb5e21d9aee8676ccb8d9162ef50302" alt="">
               </li>
-              <li>
-                <img src="img/client-2.png?d50b2c5e795a69ce779b276b75f3801a" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-2.jpg?8e7f6c00192a1b3a41bdc1c46d4d3b62" alt="">
               </li>
-              <li>
-                <img src="img/client-3.png?e46bd318afd296ef41859acc142821bb" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-3.jpg?3562128abdbc7f75e9d3bf2e049caa55" alt="">
               </li>
-              <li>
-                <img src="img/client-4.png?c9d148b5535bb81288503ec202fdf966" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-4.jpg?78bd5112000126d33204146555e1bb52" alt="">
               </li>
-              <li>
-                <img src="img/client-5.png?87e43dee0852e4c37fbfaeaf803f82ee" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-5.jpg?7dc4ebf638633b4d621e156addb77d55" alt="">
               </li>
-              <li>
-                <img src="img/client-6.png?f410e3df29c0d16004bd571a68415755" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-6.jpg?a80a9e0410b371ccb3c54b087e2f30b8" alt="">
               </li>
-              <li>
-                <img src="img/client-7.png?fd2a5d45ca4bc4d874debf85e6263ed3" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-7.jpg?c7ffb79da392a55b630cba5a5bc8b5a0" alt="">
               </li>
-              <li>
-                <img src="img/client-8.png?0a28f8278a0be40c1a2e67e5de0c7c54" alt="">
+              <li class="home-clients__list js-client-item">
+                <img src="img/client-8.jpg?24343ab9f3ff1c9570ae7c4c5dabd58d" alt="">
               </li>
             </ul>
           </div>
         </section>
-        <section class="home-contacts home-section">
+        <section class="home-contacts home-section js-home-contacts">
           <div class="home-contacts__leftside home-section__leftside">
             <div class="home-contacts__title-wrapper home-section__title-wrapper" data-uk-sticky="bottom: true">
               <h2 class="home-contacts__title home-section__title">
@@ -386,37 +551,40 @@
           <div class="home-contacts__rightside home-section__rightside">
             <ul class="home-contacts__list">
               <li>
-                <div class="contacts-item">
+                <div class="contacts-item js-contacts-item">
                   <h3 class="contacts-item__title">
                     Адрес
                   </h3>
+                  <div class="contacts-item__border js-contacts-item-border"></div>
                   <div class="contacts-item__text">
                     Воронеж, Хользунова, 107А
                   </div>
                 </div>
               </li>
               <li>
-                <div class="contacts-item">
+                <div class="contacts-item js-contacts-item">
                   <h3 class="contacts-item__title">
                     Телефон
                   </h3>
+                  <div class="contacts-item__border js-contacts-item-border"></div>
                   <a class="contacts-item__link" href="tel:74732406226">
                     +7 473 240-6226
                   </a>
                 </div>
               </li>
               <li>
-                <div class="contacts-item">
+                <div class="contacts-item js-contacts-item">
                   <h3 class="contacts-item__title">
                     Email
                   </h3>
+                  <div class="contacts-item__border js-contacts-item-border"></div>
                   <a class="contacts-item__link" href="mailto:mail@avsweb.ru">
                     mail@avsweb.ru
                   </a>
                 </div>
               </li>
             </ul>
-            <div id="map" class="map"></div>
+            <div class="map js-map"></div>
           </div>
         </section>
         <a class="to-top" data-uk-scroll href="#"></a>

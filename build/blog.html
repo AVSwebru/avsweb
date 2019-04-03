@@ -9,70 +9,109 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="js-blog">
   <div class="page-wrapper">
     <header class="main-header">
-      <a class="logo" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" fill="#fff" viewBox="0 0 936 316">
-          <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
-                      C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
-                      l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
-                      C102.1,120.4,103.2,124.4,101.5,127.5z" />
-          <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
-                      C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
-                      c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z" />
-          <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
-                      s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
-                      c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z" />
-          <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z" />
-          <text style="font-family: 'Geometria', sans-serif;
-                    font-size: 120px; fill: #fff;" x="400" y="130">AVSWEB</text>
-          <text style="font-family: 'Geometria', sans-serif;
-                    font-size: 80px; fill: #fff;" x="400" y="270">веб-студия</text>
-        </svg>
-      </a>
-      <button class="btn-menu btn-menu--innerpage js-menu-toggler"
-        data-uk-toggle="target: .js-menu-main, .js-menu-toggler; cls: active" type="button"></button>
-      <nav class="nav-main js-menu-main">
-        <ul class="nav-main__list" data-uk-nav>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">
-              <span class="nav-main__link-text">О нас</span>
-            </a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link active" href="#">
-              <span class="nav-main__link-text">Услуги</span>
-            </a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">
-              <span class="nav-main__link-text">Типы сайтов</span>
-            </a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">
-              <span class="nav-main__link-text">Портфолио</span>
-            </a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">
-              <span class="nav-main__link-text">Клиенты</span>
-            </a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">
-              <span class="nav-main__link-text">Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <a class="logo logo--light js-logo">
+          <svg viewBox="0 0 936 316">
+            <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
+                              C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
+                              l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
+                              C102.1,120.4,103.2,124.4,101.5,127.5z" />
+            <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
+                              C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
+                              c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z" />
+            <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
+                              s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
+                              c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z" />
+            <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z" />
+            <text class="logo__text" style="font-family: 'Geometria', sans-serif;
+                            font-size: 120px; fill: #fff;" x="400" y="130">AVSWEB</text>
+            <text class="logo__text" style="font-family: 'Geometria', sans-serif;
+                            font-size: 80px; fill: #fff;" x="400" y="270">веб-студия</text>
+          </svg>
+        </a>
+        <button class="btn-menu btn-menu--innerpage js-menu-toggler"
+            type="button"></button>
+        <nav class="nav-main js-menu">
+          <ul class="nav-main__list js-nav-list">
+            <li class="nav-main__item js-nav-item">
+              <a class="nav-main__link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="nav-main__item js-nav-item">
+              <a class="nav-main__link active" href="#">
+                Услуги
+              </a>
+            </li>
+            <li class="nav-main__item js-nav-item">
+              <a class="nav-main__link" href="#">
+                Типы сайтов
+              </a>
+            </li>
+            <li class="nav-main__item js-nav-item">
+              <a class="nav-main__link" href="#">
+                Портфолио
+              </a>
+            </li>
+            <li class="nav-main__item js-nav-item">
+              <a class="nav-main__link" href="#">
+                Клиенты
+              </a>
+            </li>
+            <li class="nav-main__item js-nav-item">
+              <a class="nav-main__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts-block js-contacts-block">
+          <a class="contacts-block__tel js-contacts-tel" href="tel:74732406226">
+            <svg class="contacts-block__tel-icon">
+              <use xlink:href="../img/sprite.svg#phone" />
+            </svg>
+            <span class="contacts-block__tel-text">+7 473 240-6226</span>
+          </a>
+          <ul class="contacts-block__social-list js-social-list">
+            <li class="contacts-block__social-item js-social-item">
+              <a class="contacts-block__social-link" href="#" target="_blank">
+                <svg class="contacts-block__social-icon" width="15" height="8">
+                  <use xlink:href="../img/sprite.svg#vk" />
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-block__social-item js-social-item">
+              <a class="contacts-block__social-link" href="#" target="_blank">
+                <svg class="contacts-block__social-icon" width="12" height="12">
+                  <use xlink:href="../img/sprite.svg#in" />
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-block__social-item js-social-item">
+              <a class="contacts-block__social-link" href="#" target="_blank">
+                <svg class="contacts-block__social-icon" width="8" height="15">
+                  <use xlink:href="../img/sprite.svg#fb" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-contacts js-contacts-toggler"  type="button">
+          <svg class="btn-contacts__phone">
+            <use xlink:href="../img/sprite.svg#phone" />
+          </svg>
+          <svg class="btn-contacts__close">
+            <use xlink:href="../img/sprite.svg#close" />
+          </svg>
+        </button>
+      </header>
     <div class="innerpage">
       <nav class="nav-section" aria-label="Навигация по разделу">
         <div class="nav-section__wrapper js-nav-section-wrapper">
           <div class="nav-section__title">
-            Блог
+            О нас
           </div>
           <ul class="nav-section__list">
             <li class="nav-section__item">
@@ -104,7 +143,7 @@
         </div>
       </nav>
       <main class="innerpage__content blog">
-        <div class="paddings">
+        <div class="wrapper">
           <a class="innerpage__link-back" href="#" aria-label="Ссылка на предыдущую страницу"></a>
           <h1 class="innerpage__page-title">
             Блог
@@ -112,7 +151,7 @@
           <div class="blog__grid uk-child-width-1-2@m uk-child-width-1-3@xl uk-grid-medium"
             data-uk-grid="masonry: true">
             <div>
-              <a class="blog-card blog-card--type-1" href="#">
+              <a class="blog-card blog-card--type-1 js-blog-card" href="#">
                 <span class="blog-card__content">
                   <h2 class="blog-card__title">
                     Некогда читать статьи? Видео не загружается? Тогда слушайте радио!
@@ -141,7 +180,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-2" href="#">
+              <a class="blog-card blog-card--type-2 js-blog-card" href="#">
                 <span class="blog-card__image-wrapper uk-cover-container">
                   <img class="blog-card__image" data-uk-cover src="img/blog-1.jpg?7dda872bc277ba6a32dc6133a2785ff4" alt="">
                 </span>
@@ -173,7 +212,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-3" href="#">
+              <a class="blog-card blog-card--type-3 js-blog-card" href="#">
                 <span class="blog-card__image-wrapper uk-cover-container">
                   <img class="blog-card__image" data-uk-cover src="img/blog-2.jpg?8255f7c2d6b4aa6f0b77e0bfa0aafb0d" alt="">
                 </span>
@@ -205,8 +244,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-1" href="#">
-
+              <a class="blog-card blog-card--type-1 js-blog-card" href="#">
                 <span class="blog-card__content">
                   <h2 class="blog-card__title">
                     Некогда читать статьи? Видео не загружается? Тогда слушайте радио!
@@ -235,7 +273,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-2" href="#">
+              <a class="blog-card blog-card--type-2 js-blog-card" href="#">
                 <span class="blog-card__image-wrapper uk-cover-container">
                   <img class="blog-card__image" data-uk-cover src="img/blog-3.jpg?800538f278394996347e21e3588e1d3a" alt="">
                 </span>
@@ -267,8 +305,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-3" href="#">
-
+              <a class="blog-card blog-card--type-3 js-blog-card" href="#">
                 <span class="blog-card__content">
                   <h2 class="blog-card__title">
                     Некогда читать статьи? Видео не загружается? Тогда слушайте радио!
@@ -297,7 +334,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-1" href="#">
+              <a class="blog-card blog-card--type-1 js-blog-card" href="#">
                 <span class="blog-card__image-wrapper uk-cover-container">
                   <img class="blog-card__image" data-uk-cover src="img/blog-1.jpg?7dda872bc277ba6a32dc6133a2785ff4" alt="">
                 </span>
@@ -329,7 +366,7 @@
               </a>
             </div>
             <div>
-              <a class="blog-card blog-card--type-2" href="#">
+              <a class="blog-card blog-card--type-2 js-blog-card" href="#">
                 <span class="blog-card__image-wrapper uk-cover-container">
                   <img class="blog-card__image" data-uk-cover src="img/blog-2.jpg?8255f7c2d6b4aa6f0b77e0bfa0aafb0d" alt="">
                 </span>
@@ -369,35 +406,35 @@
           </button>
         </div>
         <section class="clients">
-          <h2 class="innerpage__section-title">
-            Нам доверяют:
-          </h2>
-          <ul class="cients__list">
-            <li class="clients__list-item">
-              <img src="img/client-1--small.png?f194aa5c0e3a6f135978c27d40aceaef" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-2--small.png?1e794fa32aa023852fc7e56d41749220" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-3--small.png?46dd714d4ada5429f326643f2c2b7553" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-4--small.png?7acf1e833d9b72df7d1e79de211c0ce8" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-5--small.png?874d8c4f07708f57bbde240d6d24c7e6" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-6--small.png?8f68409fc549a1756336d5d6f1d8e69d" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-7--small.png?08add1ad7551b5ab21b93dce1045108a" alt="">
-            </li>
-            <li class="clients__list-item">
-              <img src="img/client-8--small.png?08e53f6b251b862e81a367ae9098a3ad" alt="">
-            </li>
-          </ul>
+            <h2 class="innerpage__section-title">
+              Нам доверяют:
+            </h2>
+            <ul class="cients__list">
+              <li class="clients__list-item">
+                <img src="img/client-1--small.png?f194aa5c0e3a6f135978c27d40aceaef" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-2--small.png?1e794fa32aa023852fc7e56d41749220" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-3--small.png?46dd714d4ada5429f326643f2c2b7553" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-4--small.png?7acf1e833d9b72df7d1e79de211c0ce8" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-5--small.png?874d8c4f07708f57bbde240d6d24c7e6" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-6--small.png?8f68409fc549a1756336d5d6f1d8e69d" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-7--small.png?08add1ad7551b5ab21b93dce1045108a" alt="">
+              </li>
+              <li class="clients__list-item">
+                <img src="img/client-8--small.png?08e53f6b251b862e81a367ae9098a3ad" alt="">
+              </li>
+            </ul>
         </section>
         <section class="feedback">
           <div class="feedback__inner">
@@ -416,7 +453,7 @@
                 <input class="input-text input-text--email" type="email" placeholder="Email" aria-labelledby="Email"
                   required>
               </div>
-              <button class="form-feedback__submit btn btn--wide" type="submit">
+              <button class="form-feedback__submit btn btn--wide btn--feedback" type="submit">
                 <span class="btn__caption">
                   Отправить
                 </span>
