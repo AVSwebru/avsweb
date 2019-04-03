@@ -80,6 +80,7 @@
 }
 
 .contacts-block__tel-icon {
+  display: none;
   width: 15px;
   height: 15px;
   margin-right: 10px;
@@ -87,6 +88,7 @@
   opacity: 1;
   transition: opacity 0.1s;
   @media (min-width: $breakpoint-small) {
+    display: block;
     transform: translateX(160px);
     fill: #707070;
   }
@@ -100,25 +102,23 @@
 
 .contacts-block__social-list {
   @include reset-list;
-  display: flex;
   position: relative;
-  padding-left: 56px;
+  padding-top: 56px;
   text-align: center;
   &::before {
     content: '';
     position: absolute;
-    top: calc(50% - 1px);
-    left: 0;
+    top: 0;
+    left: calc(50% - 1px);
     z-index: 2;
-    width: 36px;
-    height: 1px;
+    width: 1px;
+    height: 36px;
     background-color: #707070;
     transform: scaleY(0);
     transform-origin: 50% 0;
     transition: transform 0.25s 0.6s;
     @media (min-width: $breakpoint-small) {
-      top: 0;
-      left: calc(50% - 1px);
+     
     }
   }
   &::after {
@@ -136,29 +136,16 @@
       transition: transform 0.25s 0.6s;
     }
   }
-  @media (min-width: $breakpoint-small) {
-    display: block;
-    padding-top: 56px;
-    padding-left: 0;
-    &::before {
-      width: 1px;
-      height: 36px;
-    }
-  }
 }
 
 .contacts-block__social-item { 
-  margin-right: 14px;
+  margin-bottom: 14px;
   opacity: 0;
   transform: translateY(-10px);
   @for $i from 1 through 3 {
     &:nth-child(#{$i}) {
       transition: transform 0.25s * $i 0.3s, opacity 0.25s * $i 0.3s;
     }
-  }
-  @media (min-width: $breakpoint-small) {
-    margin-bottom: 14px;
-    margin-right: 0;
   }
 }
 

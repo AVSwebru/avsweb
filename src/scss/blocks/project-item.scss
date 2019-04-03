@@ -23,9 +23,9 @@
   line-height: 1;
 }
 
-.project-item__title-row:not(:last-of-type) {
+.project-item__title-row {
   display: block;
-  margin-bottom: 10px;
+  position: relative;
 }
 
 .project-item__image-container {
@@ -80,4 +80,29 @@
     transform: rotate(-90deg);
     transform-origin: left;
   }
+}
+
+.project-item__title-text {
+  display: inline-block;
+}
+
+.project-item__title-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+}
+
+.project-item__image-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
 }

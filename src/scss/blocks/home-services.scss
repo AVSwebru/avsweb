@@ -5,3 +5,7 @@
 .home-services__list {
   @include reset-list;
 }
+
+.home-services__list-item:last-of-type .service-item__border {
+  display: none;
+}

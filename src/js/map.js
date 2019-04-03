@@ -2,8 +2,8 @@
 var map;
  
 function initMap() {
-  if (google) {
-    map = new google.maps.Map(document.getElementById('map'), {
+  if (document.querySelector('.js-map')) {
+    map = new google.maps.Map(document.querySelector('.js-map'), {
       center: { lat: 51.700440, lng: 39.149655 },
       zoom: 12,
       styles:

@@ -23,10 +23,13 @@
     fill: #060606;
   }
   &.opened-menu {
-    position: fixed;
+    position: absolute;
     .logo__text {
       opacity: 1;
       transform: translateX(0);
+    }
+    @media (min-width: $breakpoint-small) {
+      position: fixed;
     }
   }
   @media (min-width: $breakpoint-small) {

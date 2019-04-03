@@ -1,0 +1,48 @@
+.services__result-section {
+  margin-bottom: 125px;
+}
+
+.services__price-section {
+  margin-bottom: 40px;
+}
+
+.services__price-text {
+  max-width: 580px;
+}
+
+.services__work-section {
+  position: relative;
+  margin-bottom: 170px;
+  padding-top: 65px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 45px;
+  @media (min-width: $breakpoint-large) {
+    grid-template-columns: 1.9fr 1fr;
+  }
+}
+
+.services__work-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #cfcfcf;
+}
+
+.services__work-image-container {
+  height: 0;
+  padding-top: 60%;
+}
+
+.services__work-image-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  background-color: #672aa0;
+}

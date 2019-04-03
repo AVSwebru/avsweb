@@ -1,17 +1,21 @@
 .contacts-item {
   width: 230px;
-  margin: 0 27px 50px; 
+  margin: 0 27px 65px; 
 }
 
 .contacts-item__title {
-  margin-bottom: 25px;
-  padding: 0 0 20px;
-  border-bottom: 1px solid #0d1216;
+  margin: 0;
+  padding: 0 0 15px;
   color: #343434;
   font-size: 30px;
   font-weight: 700;
 }
 
+.contacts-item__border {
+  height: 1px;
+  background-color: #0d1216;
+  margin-bottom: 20px;
+}
 
 .contacts-item__text {
   color: #4f4f4f;
