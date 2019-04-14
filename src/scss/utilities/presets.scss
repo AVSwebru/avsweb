@@ -6,11 +6,11 @@ html, body {
   line-height: 1;
 }
 
-button {
+input, textarea, select, button {
   appearance: none;
-  cursor: pointer;
+  font-family: inherit;
 }
 
-// input[type=checkbox], input[type=radio] {
-  
-// }
+button {
+  cursor: pointer;
+}

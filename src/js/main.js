@@ -10,3 +10,4 @@ import './project';
 import './project-item';
 import './type-item';
 import './service-item';
+
