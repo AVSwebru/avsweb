@@ -1,0 +1,37 @@
+.page-404 {
+  background-color: #672aa0;
+}
+
+.page-404__inner {
+  min-height: 100vh;
+}
+
+.page-404__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  padding-top: 52%;
+  background: #672aa0 url("../img/page-404.png") no-repeat 50% 50% / cover;
+}
+
+.page-404__text {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-family: $font-decor;
+  font-size: 60px;
+  a {
+    color: #000;
+  }
+  @media (min-width: $breakpoint-small) {
+    top: auto;
+    bottom: 20%;
+    font-size: 48px;
+  }
+}

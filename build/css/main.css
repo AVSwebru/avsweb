@@ -3562,3 +3562,38 @@ li.type-item__list-item:not(:last-of-type) {
   width: 20px;
   height: 20px;
   fill: #fff; }
+
+.page-404 {
+  background-color: #672aa0; }
+
+.page-404__inner {
+  min-height: 100vh; }
+
+.page-404__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  padding-top: 52%;
+  background: #672aa0 url("../img/page-404.png") no-repeat 50% 50%/cover; }
+
+.page-404__text {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 60px; }
+  .page-404__text a {
+    color: #000; }
+  @media (min-width: 640px) {
+    .page-404__text {
+      top: auto;
+      bottom: 20%;
+      font-size: 48px; } }
