@@ -1,0 +1,28 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #672aa0;
+  animation: change-background 10s linear infinite;
+  transition: background-color 0.25s;
+  &.loaded {
+    animation: preloader-out 1s ease-out forwards;
+    @media (min-width: $breakpoint-medium) {
+      animation: preloader-side-out 1s ease-out forwards;
+    }
+  }
+}
+
+.preloader__cube {
+  height: 3rem;
+  width: 3rem;
+  background: #fffcf9;
+  animation: move-cube 2s linear infinite;
+  box-shadow: 0 0 calc(3rem / 10) rgba(0, 0, 0, 0.3);
+}

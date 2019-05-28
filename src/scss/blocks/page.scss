@@ -1,3 +1,7 @@
 .page {
   position: relative;
+  overflow: hidden;
+  &.loaded {
+    overflow-y: scroll;
+  }
 }

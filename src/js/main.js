@@ -11,3 +11,5 @@ import "./project-item";
 import "./type-item";
 import "./service-item";
 import "./page-404";
+import "./preloader";
+import "./validation";

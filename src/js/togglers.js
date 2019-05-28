@@ -11,7 +11,7 @@ import TweenMax from "gsap/src/uncompressed/TweenMax";
   var isContactsOpened = false;
   var menuElements = [btnMenu, menu, contacts, logo];
 
-  if (btnMenu & menu) {
+  if (btnMenu && menu) {
     //Анимация открытия меню
     var menuOpen = new TimelineMax({ paused: true });
 
