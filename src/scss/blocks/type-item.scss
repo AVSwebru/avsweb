@@ -91,7 +91,7 @@
 		z-index: 3;
 		background: #fff;
 		transform-origin: 0% 50%;
-		``transition: transform 0.25s;
+		transition: transform 0.25s;
 		transform: translateX(100%);
 		@media (min-width: $breakpoint-medium) {
 			transform: translateX(0%);

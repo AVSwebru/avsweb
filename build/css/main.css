@@ -1955,11 +1955,14 @@ form.is-checked textarea:invalid {
       transition: opacity 0.75s 0.3s, -webkit-transform 0.75s 0.3s;
       transition: transform 0.75s 0.3s, opacity 0.75s 0.3s;
       transition: transform 0.75s 0.3s, opacity 0.75s 0.3s, -webkit-transform 0.75s 0.3s; }
+  .contacts-block:hover .contacts-block__lang-list {
+    opacity: 1;
+    transition: opacity 0.5s 0.5s; }
   .contacts-block.opened-contacts {
     display: flex;
     top: 0;
     right: 0; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .contacts-block {
       display: flex;
       flex-direction: row;
@@ -2017,7 +2020,7 @@ form.is-checked textarea:invalid {
   padding-top: 56px;
   text-align: center; }
   .contacts-block__social-list::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: calc(50% - 1px);
@@ -2033,7 +2036,7 @@ form.is-checked textarea:invalid {
     transition: transform 0.25s 0.6s;
     transition: transform 0.25s 0.6s, -webkit-transform 0.25s 0.6s; }
   .contacts-block__social-list::after {
-    content: ''; }
+    content: ""; }
     @media (min-width: 640px) {
       .contacts-block__social-list::after {
         position: absolute;
@@ -2103,44 +2106,49 @@ form.is-checked textarea:invalid {
     .contacts-block--opened .contacts-block__tel-text {
       color: #707070; } }
 
-.contacts-block--opened .contacts-block__social-list::before {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
-  background-color: #fff; }
-  @media (min-width: 960px) {
-    .contacts-block--opened .contacts-block__social-list::before {
-      background-color: #707070; } }
-
-.contacts-block--opened .contacts-block__social-list::after {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s; }
+.contacts-block--opened .contacts-block__social-list {
+  margin-bottom: 20px; }
+  .contacts-block--opened .contacts-block__social-list::before {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    background-color: #fff; }
+    @media (min-width: 960px) {
+      .contacts-block--opened .contacts-block__social-list::before {
+        background-color: #707070; } }
+  .contacts-block--opened .contacts-block__social-list::after {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }
 
 .contacts-block--opened .contacts-block__social-item {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0); }
   .contacts-block--opened .contacts-block__social-item:nth-child(1) {
-    transition: opacity 0.25s, -webkit-transform 0.25s;
-    transition: transform 0.25s, opacity 0.25s;
-    transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s; }
+    transition: opacity 0.25s 0.25s, -webkit-transform 0.25s 0.25s;
+    transition: transform 0.25s 0.25s, opacity 0.25s 0.25s;
+    transition: transform 0.25s 0.25s, opacity 0.25s 0.25s, -webkit-transform 0.25s 0.25s; }
   .contacts-block--opened .contacts-block__social-item:nth-child(2) {
-    transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
+    transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s; }
   .contacts-block--opened .contacts-block__social-item:nth-child(3) {
-    transition: opacity 0.75s, -webkit-transform 0.75s;
-    transition: transform 0.75s, opacity 0.75s;
-    transition: transform 0.75s, opacity 0.75s, -webkit-transform 0.75s; }
+    transition: opacity 0.75s 0.75s, -webkit-transform 0.75s 0.75s;
+    transition: transform 0.75s 0.75s, opacity 0.75s 0.75s;
+    transition: transform 0.75s 0.75s, opacity 0.75s 0.75s, -webkit-transform 0.75s 0.75s; }
+
+.contacts-block--opened .contacts-block__lang-list {
+  opacity: 1;
+  transition: opacity 0.5s 1s; }
 
 .contacts-block.opened-menu .contacts-block__tel-icon {
   opacity: 0;
@@ -2181,23 +2189,54 @@ form.is-checked textarea:invalid {
   -webkit-transform: translateY(0);
           transform: translateY(0); }
   .contacts-block.opened-menu .contacts-block__social-item:nth-child(1) {
-    transition: -webkit-transform 0.25s opacity 0.25s;
-    transition: transform 0.25s opacity 0.25s;
-    transition: transform 0.25s opacity 0.25s, -webkit-transform 0.25s opacity 0.25s; }
+    transition: opacity 0.25s 0.25s, -webkit-transform 0.25s 0.25s;
+    transition: transform 0.25s 0.25s, opacity 0.25s 0.25s;
+    transition: transform 0.25s 0.25s, opacity 0.25s 0.25s, -webkit-transform 0.25s 0.25s; }
   .contacts-block.opened-menu .contacts-block__social-item:nth-child(2) {
-    transition: -webkit-transform 0.5s opacity 0.5s;
-    transition: transform 0.5s opacity 0.5s;
-    transition: transform 0.5s opacity 0.5s, -webkit-transform 0.5s opacity 0.5s; }
+    transition: opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s;
+    transition: transform 0.5s 0.5s, opacity 0.5s 0.5s, -webkit-transform 0.5s 0.5s; }
   .contacts-block.opened-menu .contacts-block__social-item:nth-child(3) {
-    transition: -webkit-transform 0.75s opacity 0.75s;
-    transition: transform 0.75s opacity 0.75s;
-    transition: transform 0.75s opacity 0.75s, -webkit-transform 0.75s opacity 0.75s; }
+    transition: opacity 0.75s 0.75s, -webkit-transform 0.75s 0.75s;
+    transition: transform 0.75s 0.75s, opacity 0.75s 0.75s;
+    transition: transform 0.75s 0.75s, opacity 0.75s 0.75s, -webkit-transform 0.75s 0.75s; }
 
-.contacts-block.opened-menu .contacts-block__social-link:hover .contacts-block__social-icon {
-  fill: #ea246e; }
+.contacts-block.opened-menu .contacts-block__social-link {
+  fill: #707070; }
+  .contacts-block.opened-menu .contacts-block__social-link:hover .contacts-block__social-icon {
+    fill: #ea246e; }
 
 .contacts-block.opened-menu .contacts-block__social-icon {
   fill: #fff; }
+
+.contacts-block.opened-menu .contacts-block__lang-link {
+  color: #fff; }
+
+.contacts-block__lang-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+.contacts-block__lang-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px; }
+  .contacts-block__lang-link:hover {
+    text-decoration: none; }
+  .contacts-block__lang-link.active {
+    font-weight: 700; }
+  .contacts-block__lang-link:hover {
+    color: #ea246e; }
+  @media (min-width: 960px) {
+    .contacts-block__lang-link {
+      color: #707070; } }
 
 .btn-menu {
   padding: 0;
@@ -3754,7 +3793,7 @@ li.type-item__list-item:not(:last-of-type) {
       display: none; }
     .btn-contacts.opened-contacts .btn-contacts__close {
       display: block; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .btn-contacts {
       display: none; } }
 
