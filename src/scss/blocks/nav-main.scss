@@ -1,51 +1,49 @@
 .nav-main {
-  visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 981;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 190px 0 100px;
-  overflow-y: scroll;
-  background-color: #1e1e1e;
-  &.opened-menu {
-    visibility: visible;
-  }
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 981;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 190px 0 100px;
+	overflow-y: scroll;
+	background-color: #1e1e1e;
+	&.opened-menu {
+		visibility: visible;
+	}
 }
 
 .nav-main__list {
-  @include reset-list;
+	@include reset-list;
 }
 
 .nav-main__item {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .nav-main__link {
-  @include reset-link;
-  display: inline-block !important;
-  position: relative;
-  padding: 0 5px;
-  @include link-color(#fff);
-  font-size: 24px;
-  font-weight: 700;
-  background-image: linear-gradient(to right, #ea246e, #ea246e);
-  background-color: transparent;
-  background-position: 0 calc(100% - 2px);
-  background-repeat: no-repeat;
-  background-size: 0 9px;
-  transition: background-size 0.25s;
-  white-space: nowrap;
-  &:hover {
-    color: #fff;
-    background-size: 100% 9px;
-    transition: background-size 0.25s;
-  }
+	@include reset-link;
+	display: inline-block !important;
+	position: relative;
+	padding: 0 5px;
+	@include link-color(#fff);
+	font-size: 24px;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #ea246e, #ea246e);
+	background-color: transparent;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 0 9px;
+	transition: background-size 0.25s;
+	white-space: nowrap;
+	&:hover {
+		color: #fff;
+		background-size: 100% 9px;
+		transition: background-size 0.25s;
+	}
 }
-
-
