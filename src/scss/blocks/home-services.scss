@@ -1,11 +1,12 @@
 .home-services__title-wrapper {
-  background-color: #672aa0;
+	background: #672aa0 url("../img/home-services-noise.png") no-repeat 50% 50% /
+		auto;
 }
 
 .home-services__list {
-  @include reset-list;
+	@include reset-list;
 }
 
 .home-services__list-item:last-of-type .service-item__border {
-  display: none;
+	display: none;
 }

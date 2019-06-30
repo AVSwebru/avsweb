@@ -1,18 +1,19 @@
 .home-contacts__title-wrapper {
-  background: #dbf3ff;
+	background: #dbf3ff url("../img/home-contacts-noise.png") no-repeat 50% 50% /
+		auto;
 }
 
 .home-contacts__title {
-  color: #343434;
+	color: #343434;
 }
 
 .home-contacts__list {
-  @include reset-list;
-  display: flex;
-  padding: 70px 35px 60px;
-  margin: 0 -27px;
-  flex-wrap: wrap;
-  @media (min-width: $breakpoint-small) {
-    padding: 130px 75px 100px;
-  }
+	@include reset-list;
+	display: flex;
+	padding: 70px 35px 60px;
+	margin: 0 -27px;
+	flex-wrap: wrap;
+	@media (min-width: $breakpoint-small) {
+		padding: 130px 75px 100px;
+	}
 }

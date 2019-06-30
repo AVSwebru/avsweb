@@ -1,19 +1,19 @@
-.types__leftside {
-  background: #dbf2ff;
+.types__title-wrapper {
+	background: #dbf2ff url("../img/types-noise.png") no-repeat 50% 50% / auto;
 }
 
 .types__title {
-  color: #343434;
+	color: #343434;
 }
 
 .types__rightside {
-  box-sizing: border-box;
-  padding: 20px;
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 .types__list {
-  @include reset-list;
-  li:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
+	@include reset-list;
+	li:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
 }

@@ -1,30 +1,38 @@
 .form-feedback {
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 0 20px;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 0 20px;
+	&.is-invalid {
+		.input-text:valid {
+			border-color: #6d2cc1;
+		}
+		.input-text:invalid {
+			border-color: red;
+		}
+	}
 }
 
 .form-feedback__title {
-  margin-bottom: 75px;
-  text-align: center;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1;
+	margin-bottom: 75px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1;
 }
 
 .form-feedback__row {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .form-feedback__submit {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .form-feedback__policy {
-  color: #b7a8b6;
-  font-size: 14px;
-  a {
-    color: #b7a8b6;
-  }
+	color: #b7a8b6;
+	font-size: 14px;
+	a {
+		color: #b7a8b6;
+	}
 }
