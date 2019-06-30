@@ -22,6 +22,9 @@ button {
 form.is-checked {
 	input,
 	textarea {
+		&:valid {
+			border-bottom-color: #6d2cc1;
+		}
 		&:invalid {
 			box-shadow: none;
 			border-bottom-color: #ff0f3c;

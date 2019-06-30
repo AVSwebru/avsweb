@@ -1644,6 +1644,10 @@ button {
 button {
   cursor: pointer; }
 
+form.is-checked input:valid,
+form.is-checked textarea:valid {
+  border-bottom-color: #6d2cc1; }
+
 form.is-checked input:invalid,
 form.is-checked textarea:invalid {
   box-shadow: none;
@@ -2734,10 +2738,6 @@ li.type-item__list-item:not(:last-of-type) {
   max-width: 100%;
   box-sizing: border-box;
   padding: 0 20px; }
-  .form-feedback.is-invalid .input-text:valid {
-    border-color: #6d2cc1; }
-  .form-feedback.is-invalid .input-text:invalid {
-    border-color: red; }
 
 .form-feedback__title {
   margin-bottom: 75px;
@@ -2768,7 +2768,7 @@ li.type-item__list-item:not(:last-of-type) {
   background: transparent;
   border: none;
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: none;
+  border-radius: 0;
   background-position: 15px 50%;
   background-repeat: no-repeat;
   color: #fff;
@@ -2791,7 +2791,7 @@ li.type-item__list-item:not(:last-of-type) {
     font-size: 16px;
     font-weight: 400; }
   .input-text:focus {
-    border-color: white;
+    border-bottom-color: white;
     outline: none; }
   .input-text--name {
     background-image: url("../img/icon-user.svg"); }

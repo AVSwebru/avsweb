@@ -2,14 +2,6 @@
 	max-width: 100%;
 	box-sizing: border-box;
 	padding: 0 20px;
-	&.is-invalid {
-		.input-text:valid {
-			border-color: #6d2cc1;
-		}
-		.input-text:invalid {
-			border-color: red;
-		}
-	}
 }
 
 .form-feedback__title {

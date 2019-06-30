@@ -7,7 +7,7 @@
 	background: transparent;
 	border: none;
 	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-	border-radius: none;
+	border-radius: 0;
 	@include set-placeholder(#fff, 16px, 400);
 	background-position: 15px 50%;
 	background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	&:focus {
-		border-color: rgba(255, 255, 255, 1);
+		border-bottom-color: rgba(255, 255, 255, 1);
 		outline: none;
 	}
 	&--name {
