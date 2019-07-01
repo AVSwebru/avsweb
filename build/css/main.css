@@ -3078,7 +3078,8 @@ li.type-item__list-item:not(:last-of-type) {
   @media (min-width: 640px) {
     .nav-section__list {
       display: block;
-      padding: 0; } }
+      padding: 0;
+      overflow-x: visible; } }
 
 .nav-section__item {
   margin-right: 20px; }
@@ -3106,7 +3107,8 @@ li.type-item__list-item:not(:last-of-type) {
     background-size: 100% 5px;
     transition: background-size 0.25s; }
   .nav-section__link.active {
-    background-size: 100% 5px; }
+    background-size: 100% 5px;
+    color: #fff; }
   @media (min-width: 640px) {
     .nav-section__link {
       white-space: normal; } }
@@ -3467,7 +3469,8 @@ li.type-item__list-item:not(:last-of-type) {
     padding-top: 85%; }
 
 .blog-card__image-wrapper {
-  display: block; }
+  display: block;
+  background: no-repeat 50% 50% / cover; }
 
 .blog-card__content {
   display: block;
