@@ -1,0 +1,33 @@
+.custom-ordered-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 55px;
+	counter-reset: custom-counter;
+}
+.custom-ordered-list li {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 15px;
+	counter-increment: custom-counter;
+}
+.custom-ordered-list li::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #ea246e;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.custom-ordered-list li::after {
+	content: counter(custom-counter);
+	position: absolute;
+	top: 2px;
+	left: 6px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+}

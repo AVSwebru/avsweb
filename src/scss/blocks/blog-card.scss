@@ -15,7 +15,8 @@
 
 .blog-card__image-wrapper {
 	display: block;
-	background: no-repeat 50% 50% / cover;
+	background: #672aa0 no-repeat 50% 50% / cover;
+	background-blend-mode: luminosity;
 }
 
 .blog-card__content {

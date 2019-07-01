@@ -25,16 +25,15 @@ $nav-item-padding-vertical: 0;
 // 3. Your custom mixin overwrites.
 
 @mixin hook-form-focus() {
-  border-color: #672aa0;
+	border-color: #672aa0;
 }
 
 .uk-thumbnav > * > :focus {
-  outline: #672aa0 auto 5px;
+	outline: #672aa0 auto 5px;
 }
 
 // 4. Import UIkit.
 // @import "uikit/src/scss/uikit-theme.scss";
-
 
 // Base
 @import "uikit/src/scss/components/variables.scss";
@@ -111,7 +110,7 @@ $nav-item-padding-vertical: 0;
 
 // Utilities
 // @import "uikit/src/scss/components/animation.scss";
-// @import "uikit/src/scss/components/width.scss";
+@import "uikit/src/scss/components/width.scss";
 // @import "uikit/src/scss/components/height.scss";
 // @import "uikit/src/scss/components/text.scss";
 // @import "uikit/src/scss/components/column.scss";
@@ -120,7 +119,7 @@ $nav-item-padding-vertical: 0;
 // @import "uikit/src/scss/components/align.scss";
 @import "uikit/src/scss/components/svg.scss";
 @import "uikit/src/scss/components/utility.scss";
-// @import "uikit/src/scss/components/flex.scss"; // After: Utility
+@import "uikit/src/scss/components/flex.scss"; // After: Utility
 // @import "uikit/src/scss/components/margin.scss";
 // @import "uikit/src/scss/components/padding.scss";
 // @import "uikit/src/scss/components/position.scss";
