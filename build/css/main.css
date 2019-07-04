@@ -4701,3 +4701,23 @@ li.type-item__list-item:not(:last-of-type) {
   height: 250px;
   box-sizing: border-box;
   margin: 10px; }
+
+.custom-unordered-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 55px; }
+
+.custom-unordered-list li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 15px; }
+
+.custom-unordered-list li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #ea246e; }
