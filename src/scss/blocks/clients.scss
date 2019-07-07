@@ -1,15 +1,15 @@
 .clients {
-  padding: 0 8%;
+	padding: 0 8%;
 }
 
 .cients__list {
-  @include reset-list;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 -30px 170px;
+	@include reset-list;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -30px 140px;
 }
 
 .clients__list-item {
-  margin: 0 30px;
+	margin: 0 30px 30px;
 }

@@ -1,0 +1,12 @@
+.contacts__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	padding: 70px 0 60px;
+	margin: 0 -27px;
+	flex-wrap: wrap;
+	@media (min-width: $breakpoint-small) {
+		padding: 50px 0 100px;
+	}
+}

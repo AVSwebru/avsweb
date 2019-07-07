@@ -32,12 +32,6 @@ body {
 /* Links
  ========================================================================== */
 /*
- * Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-a {
-  -webkit-text-decoration-skip: objects; }
-
-/*
  * Remove the outline on focused links when they are also active or hovered
  */
 a:active,
@@ -54,20 +48,22 @@ a,
   cursor: pointer; }
 
 a:hover,
-.uk-link:hover {
+.uk-link:hover,
+.uk-link-toggle:hover .uk-link,
+.uk-link-toggle:focus .uk-link {
   color: #ea246e;
   text-decoration: underline; }
 
 /* Text-level semantics
  ========================================================================== */
 /*
- * 1. Add an underline text decoration in Safari, Edge and IE.
- * 2. Add `dotted` style in Safari.
- * Note: The shorthand declaration `underline dotted` is not supported in Safari, Edge and IE.
+ * 1. Add the correct text decoration in Edge.
+ * 2. The shorthand declaration `underline dotted` is not supported in Safari.
  */
 abbr[title] {
   /* 1 */
-  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
   -webkit-text-decoration-style: dotted; }
 
@@ -234,7 +230,12 @@ h2, .uk-h2,
 h3, .uk-h3,
 h4, .uk-h4,
 h5, .uk-h5,
-h6, .uk-h6 {
+h6, .uk-h6,
+.uk-heading-small,
+.uk-heading-medium,
+.uk-heading-large,
+.uk-heading-xlarge,
+.uk-heading-2xlarge {
   margin: 0 0 20px 0;
   font-family: "GothamPro", sans-serif;
   font-weight: normal;
@@ -247,7 +248,12 @@ h6, .uk-h6 {
 * + h3, * + .uk-h3,
 * + h4, * + .uk-h4,
 * + h5, * + .uk-h5,
-* + h6, * + .uk-h6 {
+* + h6, * + .uk-h6,
+* + .uk-heading-small,
+* + .uk-heading-medium,
+* + .uk-heading-large,
+* + .uk-heading-xlarge,
+* + .uk-heading-2xlarge {
   margin-top: 40px; }
 
 /*
@@ -310,20 +316,16 @@ dd {
 /* Horizontal rules
  ========================================================================== */
 /*
- * 1. Add the correct box sizing and height in Firefox.
- * 2. Show the overflow in Edge and IE.
- * 3. Add the correct text-align in Edge and IE.
- * 4. Style
+ * 1. Show the overflow in Chrome, Edge and IE.
+ * 2. Add the correct text-align in Edge and IE.
+ * 3. Style
  */
 hr, .uk-hr {
   /* 1 */
-  box-sizing: content-box;
-  height: 0;
-  /* 2 */
   overflow: visible;
-  /* 3 */
+  /* 2 */
   text-align: inherit;
-  /* 4 */
+  /* 3 */
   margin: 0 0 20px 0;
   border: 0;
   border-top: 1px solid #e5e5e5; }
@@ -3946,10 +3948,10 @@ li.type-item__list-item:not(:last-of-type) {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 -30px 170px; }
+  margin: 0 -30px 140px; }
 
 .clients__list-item {
-  margin: 0 30px; }
+  margin: 0 30px 30px; }
 
 .feedback {
   position: relative;
@@ -4721,3 +4723,15 @@ li.type-item__list-item:not(:last-of-type) {
   width: 30px;
   height: 3px;
   background-color: #ea246e; }
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  padding: 70px 0 60px;
+  margin: 0 -27px;
+  flex-wrap: wrap; }
+  @media (min-width: 640px) {
+    .contacts__list {
+      padding: 50px 0 100px; } }
