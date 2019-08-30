@@ -1,4 +1,4 @@
-import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax.js';
 import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
@@ -35,3 +35,4 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
   }
 
 })()
+

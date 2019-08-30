@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AVSWEB</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <a class="logo logo--light logo--opened js-logo" aria-label="Веб-студия Avsweb">
+                <svg viewBox="0 0 936 316">
+                    <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
+                            C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
+                            l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
+                            C102.1,120.4,103.2,124.4,101.5,127.5z" />
+                    <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
+                            C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
+                            c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z" />
+                    <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
+                            s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
+                            c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z" />
+                    <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z" />
+                    <text class="logo__text" style="font-family: 'Geometria', sans-serif;
+                          font-size: 120px; fill: #fff;" x="400" y="130">AVSWEB</text>
+                    <text class="logo__text" style="font-family: 'Geometria', sans-serif;
+                          font-size: 80px; fill: #fff;" x="400" y="270">веб-студия</text>
+                </svg>
+            </a>
+            <button class="btn-menu btn-menu--homepage js-menu-toggler" type="button"
+                aria-label="Переключатель меню"></button>
+            <nav class="nav-main js-menu" aria-label="Главное меню">
+                <ul class="nav-main__list js-nav-list">
+                    <li class="nav-main__item js-nav-item">
+                        <a class="nav-main__link" href="#">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav-main__item js-nav-item">
+                        <a class="nav-main__link active" href="#">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="nav-main__item js-nav-item">
+                        <a class="nav-main__link" href="#">
+                            Типы сайтов
+                        </a>
+                    </li>
+                    <li class="nav-main__item js-nav-item">
+                        <a class="nav-main__link" href="#">
+                            Портфолио
+                        </a>
+                    </li>
+                    <li class="nav-main__item js-nav-item">
+                        <a class="nav-main__link" href="#">
+                            Клиенты
+                        </a>
+                    </li>
+                    <li class="nav-main__item js-nav-item">
+                        <a class="nav-main__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contacts-block js-contacts-block">
+                <a class="contacts-block__tel js-contacts-tel" href="tel:74732406226" aria-label="Наш телефон">
+                    <svg class="contacts-block__tel-icon">
+                        <use xlink:href="../img/sprite.svg#phone" />
+                    </svg>
+                    <span class="contacts-block__tel-text">+7 473 240-6226</span>
+                </a>
+                <div>
+                    <ul class="contacts-block__social-list js-social-list">
+                        <li class="contacts-block__social-item js-social-item">
+                            <a class="contacts-block__social-link" href="#" target="_blank" aria-label="Наш vk">
+                                <svg class="contacts-block__social-icon" width="15" height="8">
+                                    <use xlink:href="../img/sprite.svg#vk" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-block__social-item js-social-item">
+                            <a class="contacts-block__social-link" href="#" target="_blank" aria-label="Наш instagramm">
+                                <svg class="contacts-block__social-icon" width="12" height="12">
+                                    <use xlink:href="../img/sprite.svg#in" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-block__social-item js-social-item">
+                            <a class="contacts-block__social-link" href="#" target="_blank" aria-label="Наш facebook">
+                                <svg class="contacts-block__social-icon" width="8" height="15">
+                                    <use xlink:href="../img/sprite.svg#fb" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="contacts-block__lang-list js-lang-list">
+                        <li class="contacts-block__lang-item">
+                            <a href="#" class="contacts-block__lang-link active">
+                                ru
+                            </a>
+                        </li>
+                        <li class="contacts-block__lang-item">
+                            <a href="#" class="contacts-block__lang-link">
+                                en
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-contacts js-contacts-toggler" type="button" aria-label="Переключатель блока контактов">
+                <svg class="btn-contacts__phone">
+                    <use xlink:href="../img/sprite.svg#phone" />
+                </svg>
+                <svg class="btn-contacts__close">
+                    <use xlink:href="../img/sprite.svg#close" />
+                </svg>
+            </button>
+        </header>
+        <div class="innerpage">
+            <nav class="nav-section" aria-label="Навигация по разделу">
+                <div class="nav-section__wrapper js-nav-section-wrapper">
+                    <div class="nav-section__title">
+                        Услуги
+                    </div>
+                    <ul class="nav-section__list">
+                        <li class="nav-section__item">
+                            <a href="#" class="nav-section__link">
+                                <span class="nav-section__link-text">Разработка сайтов «под ключ»</span>
+                            </a>
+                        </li>
+                        <li class="nav-section__item">
+                            <a href="#" class="nav-section__link">
+                                <span class="nav-section__link-text">Оптимизация и продвижение сайтов</span>
+                            </a>
+                        </li>
+                        <li class="nav-section__item">
+                            <a href="#" class="nav-section__link">
+                                <span class="nav-section__link-text">Контекстная реклама сайта</span>
+                            </a>
+                        </li>
+                        <li class="nav-section__item">
+                            <a href="#" class="nav-section__link">
+                                <span class="nav-section__link-text">Поддержка и сопровождение сайта</span>
+                            </a>
+                        </li>
+                        <li class="nav-section__item">
+                            <a href="#" class="nav-section__link">
+                                <span class="nav-section__link-text">Продвижение в соцсетях</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="innerpage__content details">
+                <div class="wrapper">
+                    <a class="innerpage__link-back" href="#" aria-label="Ссылка на предыдущую страницу"></a>
+                    <h1 class="innerpage__page-title">
+                        Видео - реклама
+                    </h1>
+                    <section class="details-head">
+                        <div class="details-head__content">
+                            <h2 class="innerpage__section-title">Видео реклама — в чем преимущество и особенность?</h2>
+                            <p>Предлагаю для начала определится с термином — видео реклама.</p>
+                            <p>Если коротко и ёмко, то это способ способ формирования нужного впечатления у аудитории
+                                зрителей с помощью созданных видеороликов. По средствам продуманной стратегии
+                                продвижения — видеомаркетинга. </p>
+                            <div class="details-mark">
+                                <img src="img/details-head__banner.png?277c7cd1a9b1eca1c076f71e36da3280" alt="head__banner">
+                                <div class="details-mark__canva">
+                                    <object data="../img/details-head__mark.svg" type="image/svg+xml"></object>
+                                </div>
+                            </div>
+                            <div class="details-head__gives">
+                                <h2>Что дает этот вид маркетинга?</h2>
+                                <ul class="custom-ordered-list">
+                                    <li>Почти прямой диалог между ЦА и брендом</li>
+                                    <li>Повышение конверсии по предложениям на 100% и более;</li>
+                                    <li>Привлечение новых потенциальных покупателей</li>
+                                    <li>Формирование имиджа компании</li>
+                                    <li>Высокая вовлеченность ЦА</li>
+                                    <li>Другие полезные, разнообразные способы взаимодействия со зрителями</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <aside class="details-head__aside">
+                            <div class="comment-cloud">
+                                И основная задача такого контента выражается в продвижении продуктов, брендов, услуг
+                                компаний, прямой продаже,
+                            </div>
+                        </aside>
+                    </section>
+                    <section class="details-person">
+                        <h2>Для кого полезно?</h2>
+                        <h2>Где можно размещать?</h2>
+                        <p>Важной частью создания видео, является площадка, на которой будет расположено видео. К
+                            примеру самый известный — YouTube, или менее известный Vimeo, русский видеохостинг RuTube. У
+                            каждой из этих площадок свои инструменты для показа видео и демонстрации рекламы, хотя они
+                            похожи. На YouTube и RuTube работают преролы (это ролик на 15-20сек., запускающийся в начале
+                            просмотра видео), построллы (примерно то же самое, только после просмотра видео).
+                        </p>
+                        <div class="details-person__post">
+                            <img src="img/details-company.png?1634fd69ba4595ee0d5f782f857293ef" alt="details-company">
+                            <div class="details-person__post--about">компаний всех уровней</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-buisness.png?6f803d5896016728a588d2706dff4527" alt="details-buisness">
+                            <div class="details-person__post--about">действующих бизнесменов</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-starts.png?0830e7cb25ed4849da8e4608004bd63f" alt="details-starts">
+                            <div class="details-person__post--about">начинающих предпринимателей</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-nocommerce.png?a6a5174b61c275e46e7ae5667d57ba83" alt="details-nocommerce">
+                            <div class="details-person__post--about">некоммерческих организаций</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-bloggers.png?2e01d12977e0be2fbf6dd66c7026430f" alt="details-bloggers">
+                            <div class="details-person__post--about">блоггерами</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-infobuisness.png?418668bafe3c5927bf99f3287d7a6baf" alt="details-infobuisness">
+                            <div class="details-person__post--about">инфобизнесменами</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-creative.png?140cdecefeebe401d33b6a2b138c74fa" alt="details-creative">
+                            <div class="details-person__post--about">творческими людьми</div>
+                        </div>
+                        <div class="details-person__post">
+                            <img src="img/details-government.png?1f12cae51f1641dbe5b0887139869d02" alt="details-government">
+                            <div class="details-person__post--about">правительством</div>
+                        </div>
+                    </section>
+                    <section class="details-offer">
+                        <h2>Наше предложение</h2>
+                        <div class="details-offer__box">
+                            <div class="details-offer__post offer-post">
+                                <div class="offer-post__img">
+                                    <img src="img/details-offer__post1.png?c44e2d4c4bd70f6b6872fb78a8c613a9" alt="offer-img">
+                                </div>
+                                <div class="offer-post__title">
+                                    <span>Рекламный ролик</span>
+                                </div>
+                                <div class="offer-post__body">
+                                    один из наиболее популярных стандартных форматов рекламного контента в сети интернет
+                                    и за её пределами.
+                                </div>
+                            </div>
+                            <div class="details-offer__post offer-post">
+                                <div class="offer-post__img">
+                                    <img src="img/details-offer__post1.png?c44e2d4c4bd70f6b6872fb78a8c613a9" alt="offer-img">
+                                </div>
+                                <div class="offer-post__title">
+                                    <span>Прерол (Pre-roll)</span>
+                                </div>
+                                <div class="offer-post__body">
+                                    ролик для демонстрации перед желаемым видео, в сущности, подобный формат рекламы не
+                                    зависит от желания зрителя и является действенным, так как потенциальный потребитель
+                                    запомнит бренд или продукт.
+                                </div>
+                            </div>
+                            <div class="details-offer__post offer-post">
+                                <div class="offer-post__img">
+                                    <img src="img/details-offer__post1.png?c44e2d4c4bd70f6b6872fb78a8c613a9" alt="offer-img">
+                                </div>
+                                <div class="offer-post__title">
+                                    <span>Post-roll</span>
+                                </div>
+                                <div class="offer-post__body">
+                                    является менее навязчивым форматом рекламы, так как ролик прокручивается после
+                                    просмотра основного видео
+                                </div>
+                            </div>
+                            <div class="details-offer__post offer-post">
+                                <div class="offer-post__img">
+                                    <img src="img/details-offer__post1.png?c44e2d4c4bd70f6b6872fb78a8c613a9" alt="offer-img">
+                                </div>
+                                <div class="offer-post__title">
+                                    <span>Видео контекст</span>
+                                </div>
+                                <div class="offer-post__body">
+                                    такой способ продвижения реализуется с помощью всплывающего окна во время работы с
+                                    текстом. Наводя курсор на специальную, скрытую ссылку, посетитель сайта видит
+                                    всплывающий рекламный ролик
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="details-prices">
+                        <h2>Какова примерная стоимость видеомаркетинга?</h2>
+                        <p>
+                            В стоимость рекламной компании может быть разной. От нескольких тысяч рублей, до десятков
+                            миллионов рублей. Все зависит от целей, задач, особенности продукта.
+                        </p>
+                        <p>
+                            Все очень индивидуально и нужно тестировать предварительно нишу для определения средней
+                            стоимости клиента. Как правило подобная реклама хорошо окупается. Вы смело можете ей
+                            воспользоватся обратившись к нам в агентство. Мы подберем оптимальные варианты, предложим
+                            стратегию продвижения. Создадим ролики, все настроим и протестируем.
+                        </p>
+
+                        <div class="details-prices__table">
+                            <div class="table-row">
+                                <div class="table-col">Рекламный ролик</div>
+                                <div class="table-col cost-col">от 6000 <div class="rubl">c</div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">Прерол (Pre-roll)</div>
+                                <div class="table-col cost-col">от 6000 <div class="rubl">c</div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">Post-roll</div>
+                                <div class="table-col cost-col">от 6000 <div class="rubl">c</div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">Видео контекст</div>
+                                <div class="table-col cost-col">от 6000 <div class="rubl">c</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-default">Давайте обсудим</button>
+                    </section>
+                    <section class="services__clients-section clients">
+                        <h2 class="innerpage__section-title">
+                            Нам доверяют:
+                        </h2>
+                        <ul class="cients__list">
+                            <li class="clients__list-item">
+                                <img src="img/client-1--small.png?f194aa5c0e3a6f135978c27d40aceaef" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-2--small.png?1e794fa32aa023852fc7e56d41749220" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-3--small.png?46dd714d4ada5429f326643f2c2b7553" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-4--small.png?7acf1e833d9b72df7d1e79de211c0ce8" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-5--small.png?874d8c4f07708f57bbde240d6d24c7e6" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-6--small.png?8f68409fc549a1756336d5d6f1d8e69d" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-7--small.png?08add1ad7551b5ab21b93dce1045108a" alt="">
+                            </li>
+                            <li class="clients__list-item">
+                                <img src="img/client-8--small.png?08e53f6b251b862e81a367ae9098a3ad" alt="">
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <footer class="main-footer">
+            <div class="main-footer__agreements">
+                <a class="main-footer__agreements-link" href="#">
+                    Политика конфиденциальности
+                </a>
+                <a class="main-footer__agreements-link" href="#">
+                    Пользовательское соглашение
+                </a>
+            </div>
+            <nav class="nav-footer" aria-label="Навигация в футере">
+                <ul class="nav-footer__list">
+                    <li class="nav-footer__item"><a href="#" class="nav-footer__link">О нас</a></li>
+                    <li class="nav-footer__item"><a href="#" class="nav-footer__link">Услуги</a></li>
+                    <li class="nav-footer__item"><a href="#" class="nav-footer__link">Типы сайтов</a></li>
+                    <li class="nav-footer__item"><a href="#" class="nav-footer__link">Портфолио</a></li>
+                    <li class="nav-footer__item"><a href="#" class="nav-footer__link">Клиенты</a></li>
+                    <li class="nav-footer__item"><a href="#" class="nav-footer__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__contacts">
+                <div class="main-footer__contacts-leftside">
+                    <a class="main-footer__tel" href="tel:+74732406226">+7 473 240-6226</a>
+                    <div class="main-footer__address">
+                        г. Воронеж, Хользунова, 107А
+                    </div>
+                    <a class="main-footer__mail" href="mailto:mail@avsweb.ru">mail@avsweb.ru</a>
+                </div>
+                <div class="main-footer__contacts-rightside">
+
+                </div>
+            </div>
+        </footer>
+        <a class="to-top" data-uk-scroll href="#"></a>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

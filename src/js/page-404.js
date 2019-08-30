@@ -1,7 +1,7 @@
-import TweenMax from "gsap/src/uncompressed/TweenMax";
-import TimelineMax from "gsap/src/uncompressed/TimelineMax";
+import TweenMax from 'gsap/src/uncompressed/TweenMax.js';
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax.js';
 
-(function() {
+(function () {
   if (document.querySelector(".js-404")) {
     var page404Tween = new TimelineMax();
     page404Tween

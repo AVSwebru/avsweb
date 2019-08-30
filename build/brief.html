@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AVSWEB</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page js-homepage">
+    <div class="page-wrapper">
+        <div class="container">
+            <header class="main-header">
+            </header>
+            <main class="page">
+                <style>
+                    .brief {
+                        max-width: 600px;
+                        margin: 30px auto;
+                        padding: 0 15px;
+                    }
+
+                    .brief .infofield {
+                        color: #111111;
+                    }
+
+                    .brief textarea {
+                        width: calc(100% - 30px);
+                        margin: 10px 0 15px;
+                        padding: 10px 15px;
+                        height: 100px;
+                    }
+
+                    .brief input {
+                        padding: 10px 15px;
+                        width: calc(100% - 30px);
+                        margin: 15px 0;
+                        border: 1px solid #a9a9a9;
+                    }
+
+                    .brief input[type='submit'] {
+                        max-width: 300px;
+                    }
+
+                    .brief .form-group {
+                        margin: 40px 0;
+                    }
+
+                    .brief .feedback_form_param_text,
+                    .brief .privacy_field {
+                        font-size: 14px;
+                    }
+
+                    .brief .required_field {
+                        font-size: 14px;
+                    }
+
+                    .brief .privacy_field a {
+                        font-size: 14px;
+                    }
+                </style>
+                <div class="brief">
+                    <div class="feedback_form">
+                        <form method="POST" enctype="multipart/form-data" action="" class="ajax">
+                            <div class="feedback_form_param18">
+                                <div class="infofield">Полное название компании и домена сайта:</div>
+                                <textarea name="p18" cols="66" rows="3" class="brief__textarea"></textarea>
+                            </div>
+                            <div class="errors error_p18" style="display:none"></div>
+                            <div class="feedback_form_param19 form-group">
+                                <div class="infofield">Контактная информация<span style="color:red;">*</span>:</div>
+                                <textarea name="p19" cols="66" rows="3" class="brief__textarea"></textarea>
+                                <div class="feedback_form_param_text">ФИО, должность контактного лица, эл. почта,
+                                    телефон для связи)</div>
+                            </div>
+                            <div class="errors error_p19" style="display:none"></div>
+                            <div class="feedback_form_param20 form-group">
+                                <div class="infofield">География работы компании:</div>
+                                <input type="text" name="p20" value="" class="brief__input">
+                                <div class="feedback_form_param_text">(город, регионы)</div>
+                            </div>
+                            <div class="errors error_p20" style="display:none"></div>
+                            <div class="feedback_form_param21 form-group">
+                                <div class="infofield">Планируемые сроки проекта:</div>
+                                <input type="text" name="p21" value="" class="brief__input">
+                                <div class="feedback_form_param_text">(начало работ, запуск проекта)</div>
+                            </div>
+                            <div class="errors error_p21" style="display:none"></div>
+                            <div class="feedback_form_param22 form-group">
+                                <div class="infoform">Задача:</div>
+                            </div>
+                            <div class="feedback_form_param23 form-group">
+                                <div class="infofield">Какова область деятельности и специфика бизнеса/работы вашей
+                                    организации<span style="color:red;">*</span>:</div>
+                                <textarea name="p23" cols="66" rows="3" class="brief__textarea"></textarea>
+                            </div>
+                            <div class="errors error_p23" style="display:none"></div>
+                            <input type="submit" value="Отправить" class="button solid btn btn--wide">
+                            <div class="privacy_field">Отправляя форму, я даю согласие на <a
+                                    href="https://avsweb.ru/privacy/">обработку персональных данных</a>.</div>
+                            <div class="required_field"><span style="color:red;">*</span> — Поля, обязательные для
+                                заполнения</div>
+                        </form>
+                        <div class="errors error" style="display:none"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="preloader js-preloader">
+        <div class="preloader__cube"></div>
+    </div>
+    <script src="bundle.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIFahTcjICtZwQkdqP7S3XR8oGynPi7LM"></script>
+</body>
+
+</html>

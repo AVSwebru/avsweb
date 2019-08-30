@@ -1,7 +1,7 @@
-import TimelineMax from "gsap/src/uncompressed/TimelineMax";
 import TweenMax from "gsap/src/uncompressed/TweenMax";
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 
-(function() {
+(function () {
 	var btnMenu = document.querySelector(".js-menu-toggler");
 	var menu = document.querySelector(".js-menu");
 	var contacts = document.querySelector(".js-contacts-block");

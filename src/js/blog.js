@@ -1,4 +1,4 @@
-import TweenMax from 'gsap/src/uncompressed/TweenMax';
+import TweenMax from 'gsap/src/uncompressed/TweenMax.js';
 
 (function () {
 

@@ -1,8 +1,8 @@
-import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax.js';
 import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
-(function(){
+(function () {
 
   if (document.querySelector('.js-services')) {
 
@@ -16,7 +16,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
         ease:
           Power4.easeInOut, y: 300, opacity: 0
       }, 0.25);
-      
+
     new ScrollMagic.Scene({
       triggerElement: '.js-services-result',
       reverse: false
@@ -36,7 +36,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
         ease:
           Power4.easeInOut, y: 300, opacity: 0
       }, '-=1');
-      
+
     new ScrollMagic.Scene({
       triggerElement: '.js-services-price',
       reverse: false
@@ -64,7 +64,7 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
         ease:
           Power4.easeInOut, y: 300, opacity: 0
       }, 0.5)
-      
+
     new ScrollMagic.Scene({
       triggerElement: '.js-services-work',
       reverse: false
@@ -74,5 +74,5 @@ import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 
   }
-  
+
 })()
